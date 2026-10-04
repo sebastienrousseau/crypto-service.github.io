@@ -15,14 +15,14 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 
 <!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
-<section class="news-featured-section" id="release-v006">
+<section class="news-featured-section" id="release-v0020">
 <div class="news-spotlight-card">
-<div class="news-tag font-mono">LATEST RELEASE • SEPTEMBER 2026</div>
-<h2>Crypto Service Suite v0.0.6 Released with Unified Release Pipeline &amp; Cross-Platform Fixes</h2>
+<div class="news-tag font-mono">LATEST RELEASE • OCTOBER 2026</div>
+<h2>Crypto Service Suite v0.0.20 Released with Post-Quantum Security &amp; Documentation Portal</h2>
 <p class="lead-text">
-We are proud to announce the general availability of Crypto Service Suite v0.0.6 across all 18 monorepo workspace packages. This iteration unifies dependency security overrides across all downstream packages, streamlines cross-platform build pipelines for Windows runners, and establishes a single-funnel release pipeline.
+We are proud to announce the general availability of Crypto Service Suite v0.0.20 across all 18 monorepo workspace packages. This iteration establishes a dedicated TypeDoc documentation portal at docs.crypto-service.co, purges vulnerable transitive dependencies to zero audit findings, advances post-quantum hybrid HPKE, and synchronizes the entire ecosystem in strict lockstep.
 </p>
-<div class="news-meta font-mono">Published September 29, 2026 • 5 min read • Core Engineering Team</div>
+<div class="news-meta font-mono">Published October 4, 2026 • 5 min read • Core Engineering Team</div>
 </div>
 </section>
 
