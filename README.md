@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="images/screenshot.webp" alt="Crypto Service Suite Website Interface" width="100%" />
+  <img src=".github/demo.gif" alt="crypto-service.github.io Terminal Demo" width="100%" />
 </p>
 
 ---
