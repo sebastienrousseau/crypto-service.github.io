@@ -55,6 +55,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://crypto-service.co/documentation/index.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://crypto-service.co/ecosystem/index.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>

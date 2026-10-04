@@ -39,6 +39,14 @@
       <author>Sebastien Rousseau</author>
     </item>
     <item>
+      <title>Crypto Service Suite Documentation — Developer & API Reference</title>
+      <link>https://crypto-service.co/documentation/</link>
+      <description>Interactive TypeDoc API references, developer quick-start guides, and architectural blueprints across all 18 lockstep packages of the Crypto Service Suite.</description>
+      <guid isPermaLink="true">https://crypto-service.co/documentation/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
       <title>Crypto Service vs BitGo: Non-Custodial Architecture vs Hosted Intermediaries</title>
       <link>https://crypto-service.co/compare/bitgo/</link>
       <description>Detailed institutional architecture comparison between Crypto Service Suite and BitGo across non-custodial execution, post-quantum readiness, and fee structures.</description>

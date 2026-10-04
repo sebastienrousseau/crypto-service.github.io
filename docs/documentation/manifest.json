@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Interactive TypeDoc API references, developer quick-start guides, and architectural blueprints across all 18 lockstep pa",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}
