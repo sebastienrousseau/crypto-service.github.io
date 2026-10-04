@@ -23,7 +23,7 @@ Crypto Service Suite is a TypeScript monorepo released in lockstep. CI builds, l
 </section>
 
 <div class="ecosystem-category-section">
-<h3 class="category-heading">Core Cryptographic Primitives &amp; Runtimes</h3>
+<h3 class="category-heading" id="core-packages">Core Cryptographic Primitives &amp; Runtimes</h3>
 <div class="packages-grid">
 <div class="package-card">
 <div class="package-header">
@@ -64,7 +64,7 @@ Crypto Service Suite is a TypeScript monorepo released in lockstep. CI builds, l
 </div>
 
 <div class="ecosystem-category-section">
-<h3 class="category-heading">Enterprise Connectors &amp; Infrastructure</h3>
+<h3 class="category-heading" id="enterprise-frameworks">Enterprise Connectors &amp; Infrastructure</h3>
 <div class="packages-grid">
 <div class="package-card">
 <div class="package-header">
@@ -105,7 +105,7 @@ Crypto Service Suite is a TypeScript monorepo released in lockstep. CI builds, l
 </div>
 
 <div class="ecosystem-category-section">
-<h3 class="category-heading">Database Envelope Encryption &amp; ORM Extensions</h3>
+<h3 class="category-heading" id="database-encryption">Database Envelope Encryption &amp; ORM Extensions</h3>
 <div class="packages-grid">
 <div class="package-card">
 <div class="package-header">
@@ -146,7 +146,7 @@ Crypto Service Suite is a TypeScript monorepo released in lockstep. CI builds, l
 </div>
 
 <div class="ecosystem-category-section">
-<h3 class="category-heading">AI Tooling, Developer Experience &amp; UI Libraries</h3>
+<h3 class="category-heading" id="developer-tools">AI Tooling, Developer Experience &amp; UI Libraries</h3>
 <div class="packages-grid">
 <div class="package-card">
 <div class="package-header">
