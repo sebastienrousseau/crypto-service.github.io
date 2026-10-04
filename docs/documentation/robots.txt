@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://crypto-service.co/documentation/sitemap.xml

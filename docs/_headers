@@ -45,9 +45,6 @@
 /contact/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5lVdYKOBVBYNKX5ljoEcv5O0UnEGjlhsWJP8dT17UHk='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
-/documentation/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-J8b04cDWbwHBbY9idM9/39XbmH28N9rlagFJwCmeVHE='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
-
 /ecosystem/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-FV5MaHx6hPu7VXH4GMZhKna2sUIil6Ueoj8trrwjq38='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 

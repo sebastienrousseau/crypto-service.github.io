@@ -128,21 +128,6 @@
           "name": "Sebastien Rousseau"
         }
       ],
-      "content_html": "Interactive TypeDoc API references, developer quick-start guides, and architectural blueprints across all 18 lockstep packages of the Crypto Service Suite.",
-      "date_modified": "",
-      "date_published": "",
-      "id": "https://crypto-service.co/documentation/",
-      "language": "en-GB",
-      "tags": [],
-      "title": "Crypto Service Suite Documentation — Developer & API Reference",
-      "url": "https://crypto-service.co/documentation/"
-    },
-    {
-      "authors": [
-        {
-          "name": "Sebastien Rousseau"
-        }
-      ],
       "content_html": "Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic primitives, CaaS servers, KMS brokers, edge runtimes, and developer tooling.",
       "date_modified": "",
       "date_published": "",

@@ -91,17 +91,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://crypto-service.co/documentation/</loc>
-  <news:news>
-    <news:publication>
-      <news:name>Sebastien Rousseau</news:name>
-      <news:language>en-GB</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Crypto Service Suite Documentation — Developer & API Reference</news:title>
-  </news:news>
-</url>
-<url>
   <loc>https://crypto-service.co/ecosystem/</loc>
   <news:news>
     <news:publication>

@@ -78,15 +78,6 @@
     <author><name>Sebastien Rousseau</name></author>
   </entry>
   <entry>
-    <title>Crypto Service Suite Documentation — Developer &amp; API Reference</title>
-    <link href="https://crypto-service.co/documentation/"/>
-    <id>https://crypto-service.co/documentation/</id>
-    <updated></updated>
-    <published></published>
-    <summary>Interactive TypeDoc API references, developer quick-start guides, and architectural blueprints across all 18 lockstep packages of the Crypto Service Suite.</summary>
-    <author><name>Sebastien Rousseau</name></author>
-  </entry>
-  <entry>
     <title>The Crypto Service Ecosystem — 18 Workspace Packages &amp; Enterprise Modules</title>
     <link href="https://crypto-service.co/ecosystem/"/>
     <id>https://crypto-service.co/ecosystem/</id>

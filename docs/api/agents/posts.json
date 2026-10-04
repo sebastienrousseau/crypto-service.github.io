@@ -64,15 +64,6 @@
   },
   {
     "date": "2026-10-04",
-    "description": "Interactive TypeDoc API references, developer quick-start guides, and architectural blueprints across all 18 lockstep packages of the Crypto Service Suite.",
-    "locale": "en-GB",
-    "tags": [],
-    "title": "Crypto Service Suite Documentation — Developer & API Reference",
-    "url": "https://crypto-service.co/documentation/",
-    "wordCount": 1279
-  },
-  {
-    "date": "2026-10-04",
     "description": "Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic primitives, CaaS servers, KMS brokers, edge runtimes, and developer tooling.",
     "locale": "en-GB",
     "tags": [],
