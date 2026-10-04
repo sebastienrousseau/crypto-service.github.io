@@ -11,10 +11,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sebastienrousseau/crypto-service.github.io/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/crypto-service.github.io/ci.yml?style=for-the-badge&logo=github" alt="Build" /></a>
-  <a href="https://github.com/sebastienrousseau/crypto-service.github.io/releases"><img src="https://img.shields.io/github/v/release/sebastienrousseau/crypto-service.github.io?style=for-the-badge&color=fc8d62&logo=git" alt="Release" /></a>
+  <a href="https://github.com/sebastienrousseau/crypto-service.github.io/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/crypto-service.github.io/deploy.yml?branch=main&style=for-the-badge&logo=github&label=Deploy" alt="Deploy" /></a>
+  <a href="https://crypto-service.co"><img src="https://img.shields.io/badge/website-crypto--service.co-005950?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Website: crypto-service.co" /></a>
+  <a href="https://docs.crypto-service.co"><img src="https://img.shields.io/badge/docs-docs.crypto--service.co-2ec4b6?style=for-the-badge&logo=gitbook&logoColor=white" alt="Docs: docs.crypto-service.co" /></a>
+  <a href="https://github.com/sebastienrousseau/crypto-service/releases"><img src="https://img.shields.io/github/v/release/sebastienrousseau/crypto-service?style=for-the-badge&color=fc8d62&logo=git&label=Suite%20Release" alt="Suite Release" /></a>
   <a href="https://static-site-generator.com/"><img src="https://img.shields.io/badge/SSG-0.0.63-66c2a5?style=for-the-badge&labelColor=555555&logo=rust" alt="Built with SSG" /></a>
-  <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/crypto-service.github.io"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/crypto-service.github.io?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
   <a href="LICENSE-APACHE"><img src="https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue.svg?style=for-the-badge" alt="License: Apache-2.0 OR MIT" /></a>
 </p>
 
