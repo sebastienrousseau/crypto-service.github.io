@@ -7,6 +7,19 @@ def post_build():
     docs_dir = "docs"
     base_url = "https://crypto-service.co"
 
+    # Copy static images and assets into public/
+    for folder in ["images", "assets"]:
+        if os.path.isdir(folder):
+            dest = os.path.join(output_dir, folder)
+            if os.path.exists(dest):
+                shutil.rmtree(dest)
+            shutil.copytree(folder, dest)
+
+    for single_file in ["favicon.ico", "robots.txt", "security.txt"]:
+        if os.path.isfile(single_file):
+            shutil.copy2(single_file, os.path.join(output_dir, single_file))
+
+    # Sync public/ into docs/
     os.makedirs(docs_dir, exist_ok=True)
     for item in os.listdir(output_dir):
         s = os.path.join(output_dir, item)
@@ -72,7 +85,7 @@ def post_build():
             with open(html_file, "w", encoding="utf-8") as f:
                 f.write(content)
 
-    print(f"Post-build optimization complete ({len(all_pages)} URLs sync'd to docs/ and public/).")
+    print(f"Post-build optimization complete ({len(all_pages)} URLs sync'd to docs/ and public/, images and assets mirrored).")
 
 if __name__ == "__main__":
     post_build()
