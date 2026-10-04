@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Which standards Crypto Service Suite implements (NIST FIPS 203/204/205 algorithms, RFC 9180, CycloneDX) and how it relates to EU DORA and NSA CNSA 2.0. Implemented algorithms are not a certification.",
+  "eyebrow": "Global Standards & Invariants",
+  "headline": "Cryptographic Standards Implementation Matrix",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "The algorithms and formats Crypto Service Suite implements, mapped to the standards that define them, with the limits of what that implementation claims.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 3,
+  "title": "Standards & Regulatory Alignment — Post-Quantum Financial Architecture",
+  "word_count": 614
+}

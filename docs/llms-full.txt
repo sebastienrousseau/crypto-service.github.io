@@ -1,0 +1,5 @@
+# crypto-service
+
+> Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module), a KMS provider interface, database field encryption and CycloneDX CBOM generation across 18 lockstep packages.
+
+Language: en-GB

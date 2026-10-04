@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Institutional governance, engineering philosophy, and architectural standards behind the 18 lockstep packages in Crypto ",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

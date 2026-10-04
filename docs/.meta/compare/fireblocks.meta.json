@@ -1,0 +1,20 @@
+{
+  "author": "Sebastien Rousseau",
+  "cta_primary": "Explore 18 Packages",
+  "date": "2026-09-28",
+  "description": "Comparison of Crypto Service Suite and Fireblocks Treasury Management: Post-quantum FIPS 203/204 lattice cryptography vs legacy elliptic curve MPC.",
+  "eyebrow": "Institutional Treasury Comparison",
+  "headline": "Post-Quantum Cryptography vs. Classical Threshold MPC",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Discover why standard Multi-Party Computation (MPC) architectures remain exposed to Store-Now-Decrypt-Later (SNDL) attacks, and how Crypto Service Suite future-proofs treasury operations.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "nav_faq": "FAQ",
+  "nav_overview": "Architecture",
+  "nav_security": "Security",
+  "reading_time": 2,
+  "title": "Crypto Service vs Fireblocks: Post-Quantum Architecture vs Pre-Quantum MPC",
+  "word_count": 492
+}

@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

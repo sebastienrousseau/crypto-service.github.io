@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Implementation guide for generating CycloneDX 1.6 Cryptographic Bills of Materials (CBOM) with crypto-cbom, auditing them for weak algorithms, and using them as inventory input for EU DORA ICT risk work.",
+  "eyebrow": "Implementation Guide · DORA & CBOM",
+  "headline": "CBOM Manual: Cryptographic Inventories for DORA Work",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "How to generate CycloneDX 1.6 Cryptographic Bills of Materials with crypto-cbom and use them as inventory input for Digital Operational Resilience Act (DORA) work. A CBOM does not by itself establish compliance.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 4,
+  "title": "CBOM Manual: Cryptographic Inventories for DORA Work",
+  "word_count": 834
+}

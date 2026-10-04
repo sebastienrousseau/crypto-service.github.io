@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Institutional governance, engineering philosophy, and architectural standards behind the 18 lockstep packages in Crypto Service Suite.",
+  "eyebrow": "Governance & Engineering Philosophy",
+  "headline": "Sovereign Cryptographic Infrastructure for Modern Enterprise & Cloud Stacks",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Crypto Service Suite is an open-source TypeScript monorepo with enforced test coverage gates, a small set of well-known runtime dependencies, and self-hostable deployment.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 2,
+  "title": "About Us & Institutional Governance — Crypto Service Suite",
+  "word_count": 515
+}

@@ -1,0 +1,18 @@
+{
+  "api": {
+    "is_user_authenticated": false,
+    "type": "openapi",
+    "url": "https://crypto-service.co/openapi.yaml"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "support@crypto-service.co",
+  "description_for_human": "Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module), a KMS provider interface, database field encryption and CycloneDX CBOM generation across 18 lockstep packages.",
+  "description_for_model": "Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module), a KMS provider interface, database field encryption and CycloneDX CBOM generation across 18 lockstep packages.",
+  "legal_info_url": "https://crypto-service.co/legal",
+  "logo_url": "https://crypto-service.co/favicon.ico",
+  "name_for_human": "Crypto Service Suite — Post-Quantum Cryptographic Infrastructure for Institutional Finance",
+  "name_for_model": "crypto_service",
+  "schema_version": "v1"
+}

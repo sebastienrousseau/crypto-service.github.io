@@ -1,0 +1,20 @@
+{
+  "author": "Sebastien Rousseau",
+  "cta_primary": "Explore 18 Packages",
+  "date": "2026-09-28",
+  "description": "Detailed institutional architecture comparison between Crypto Service Suite and BitGo across non-custodial execution, post-quantum readiness, and fee structures.",
+  "eyebrow": "Institutional Custody Comparison",
+  "headline": "Non-Custodial Cryptographic Infrastructure vs. Custodial Intermediaries",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Compare sovereign on-premise zero-trust cryptography with BitGo's hosted custody platform. Eliminate basis point asset fees, cloud dependency, and counterparty insolvency risk.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "nav_faq": "FAQ",
+  "nav_overview": "Architecture",
+  "nav_security": "Security",
+  "reading_time": 2,
+  "title": "Crypto Service vs BitGo: Non-Custodial Architecture vs Hosted Intermediaries",
+  "word_count": 527
+}

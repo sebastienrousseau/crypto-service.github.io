@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "That address does not match a page in Crypto Service Suite. Return to the home page to explore solutions, packages, and ",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

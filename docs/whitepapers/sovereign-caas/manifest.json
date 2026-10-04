@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Architecture white paper on running a self-hosted Cryptography-as-a-Service (CaaS) tier with crypto-server inside a priv",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

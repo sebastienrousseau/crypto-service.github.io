@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Latest news, cryptographic research publications, whitepapers, and event announcements from the Crypto Service Suite pro",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

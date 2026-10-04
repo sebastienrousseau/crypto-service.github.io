@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "How to benchmark NIST FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) operations in Crypto Service Suite with the committed benchmark code, plus the key, ciphertext and signature sizes fixed by the standards.",
+  "eyebrow": "Benchmark Specification",
+  "headline": "Post-Quantum Benchmarks: Method, Sizes and Status",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Earlier versions of this paper published latency figures, including a WebAssembly ML-KEM-768 result of 34.1 µs, that did not come from committed code. They have been withdrawn. This page explains how to measure on your own hardware.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 2,
+  "title": "Post-Quantum Benchmarks: Method, Sizes and Status",
+  "word_count": 460
+}

@@ -1,0 +1,17 @@
+# Crypto Service Suite
+> Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms, KMS provider interface, database field encryption, and CycloneDX CBOM generation across 18 lockstep packages.
+
+## Documentation Hub
+- Ecosystem Documentation Portal: https://docs.crypto-service.co/
+- Package Documentation: https://docs.crypto-service.co/packages/crypto-lib/index.html
+
+## Core Website Pages
+- Homepage: https://crypto-service.co/
+- Ecosystem Overview: https://crypto-service.co/ecosystem.html
+- Solutions: https://crypto-service.co/solutions.html
+- Cryptographic Standards: https://crypto-service.co/standards.html
+- Whitepapers: https://crypto-service.co/whitepapers/index.html
+- Competitive Comparisons: https://crypto-service.co/compare/index.html
+- Research: https://crypto-service.co/research.html
+- About: https://crypto-service.co/about.html
+- Contact: https://crypto-service.co/contact.html

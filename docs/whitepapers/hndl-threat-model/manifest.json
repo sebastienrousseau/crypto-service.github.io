@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Authoritative threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial r",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

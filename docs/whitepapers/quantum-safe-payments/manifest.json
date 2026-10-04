@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Authoritative industry white paper produced for the Emerging Payments Association Asia (EPAA) by Sebastien Rousseau, ana",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

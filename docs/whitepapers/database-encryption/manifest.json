@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Engineering white paper on transparent field-level authenticated encryption (XChaCha20-Poly1305) with the crypto-prisma ",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

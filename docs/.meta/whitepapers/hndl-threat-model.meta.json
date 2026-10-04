@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Authoritative threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial records, corporate secrets, and long-dated customer archives.",
+  "eyebrow": "Threat Intelligence White Paper · HNDL",
+  "headline": "Harvest-Now-Decrypt-Later: Defending Long-Dated Enterprise Assets",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "An exhaustive architectural analysis detailing adversarial traffic interception, long-term cryptographic decay, and immediate hybrid post-quantum defenses.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 6,
+  "title": "Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets",
+  "word_count": 1278
+}

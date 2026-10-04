@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Technical architecture white paper detailing the migration of wholesale banking settlement engines, ISO 20022 message payloads (pacs.008, pain.001), and high-throughput SWIFT/Fedwire rails to post-quantum cryptography.",
+  "eyebrow": "Interbank Infrastructure Brief · ISO 20022 & SWIFT",
+  "headline": "Post-Quantum Migration Architecture & Interbank Settlement Rails",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Transitioning wholesale banking settlement engines, ISO 20022 payment payloads, and high-throughput SWIFT/Fedwire rails to quantum-resistant signatures with zero downtime.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 5,
+  "title": "Post-Quantum Migration Architecture & Interbank Settlement Rails",
+  "word_count": 1037
+}

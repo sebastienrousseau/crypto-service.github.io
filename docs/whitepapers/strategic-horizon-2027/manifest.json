@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Authoritative executive treatise examining the 2027 post-quantum transition horizon, NIST FIPS 203/204/205 standards, US",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

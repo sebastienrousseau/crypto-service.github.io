@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Implementation guide for generating CycloneDX 1.6 Cryptographic Bills of Materials (CBOM) with crypto-cbom, auditing the",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

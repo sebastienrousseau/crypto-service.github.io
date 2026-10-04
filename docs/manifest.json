@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "description": "Self-hostable, open-source cryptography toolkit for fintechs, banks, and enterprise engineering teams: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (via @noble/post-quantum; not a validated...",
+  "display": "standalone",
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

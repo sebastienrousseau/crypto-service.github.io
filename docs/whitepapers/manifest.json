@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Authoritative white papers, cryptographic research publications, and banking infrastructure architectural briefs publish",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

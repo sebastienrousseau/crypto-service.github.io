@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "In-depth architectural comparison between Crypto Service Suite and legacy custodial platforms: BitGo, Copper, Fireblocks, and Hedera.",
+  "eyebrow": "Competitive Moat & Custody Analysis",
+  "headline": "Sovereign Non-Custodial Core vs. Third-Party Hosted Intermediaries",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Compare our zero-trust, post-quantum cryptographic architecture with existing institutional solutions across custody models, post-quantum readiness, latency, and regulatory sovereignty.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 5,
+  "title": "Institutional Comparisons & Competitive Moat — Crypto Service Suite",
+  "word_count": 1154
+}

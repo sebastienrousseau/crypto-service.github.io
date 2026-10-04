@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Architecture white paper on running a self-hosted Cryptography-as-a-Service (CaaS) tier with crypto-server inside a private VPC, what the suite provides today, and how it fits EU DORA ICT risk work.",
+  "eyebrow": "Architecture Blueprint · Sovereign CaaS",
+  "headline": "Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "An architecture pattern for running a self-hosted cryptography service inside private VPCs, with an honest account of what Crypto Service Suite provides today.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 4,
+  "title": "Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions",
+  "word_count": 959
+}

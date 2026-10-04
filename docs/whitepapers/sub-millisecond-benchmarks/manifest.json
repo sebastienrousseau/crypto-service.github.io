@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "How to benchmark NIST FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) operations in Crypto Service Suite with the committed benc",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

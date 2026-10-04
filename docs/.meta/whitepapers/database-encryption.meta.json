@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-09-28",
+  "description": "Engineering white paper on transparent field-level authenticated encryption (XChaCha20-Poly1305) with the crypto-prisma and crypto-typeorm adapters: how they work today and what they do not yet do.",
+  "eyebrow": "Database Security White Paper · ORM Field Encryption",
+  "headline": "Transparent Column-Level Database Encryption with Prisma & TypeORM",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "An architectural guide to authenticated field-level encryption in application code with the Prisma and TypeORM adapters, including their current limits.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 4,
+  "title": "Transparent Column-Level Database Encryption with Prisma & TypeORM",
+  "word_count": 830
+}

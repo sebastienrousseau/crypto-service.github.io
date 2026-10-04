@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crypto Service Suite — Post-Quantum Cryptographic Infrastructure for Modern Enterprise</title>
+    <link>https://crypto-service.co/</link>
+    <description>Self-hostable, open-source cryptography toolkit for fintechs, banks, and enterprise engineering teams: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (via @noble/post-quantum; not a validated cryptographic module), a KMS interface, database field encryption, and CycloneDX CBOM generation across 18 lockstep packages.</description>
+    <atom:link href="https://crypto-service.co/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <item>
+      <title>2027 Post-Quantum Strategic Horizon & Cryptographic Audit</title>
+      <link>https://crypto-service.co/research/</link>
+      <description>Authoritative research white paper examining the 2027 post-quantum transition horizon, Harvest Now Decrypt Later (HNDL) threats, lattice-based cryptography benchmarks, and architectural defense.</description>
+      <guid isPermaLink="true">https://crypto-service.co/research/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>About Us & Institutional Governance — Crypto Service Suite</title>
+      <link>https://crypto-service.co/about/</link>
+      <description>Institutional governance, engineering philosophy, and architectural standards behind the 18 lockstep packages in Crypto Service Suite.</description>
+      <guid isPermaLink="true">https://crypto-service.co/about/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>CBOM Manual: Cryptographic Inventories for DORA Work</title>
+      <link>https://crypto-service.co/whitepapers/dora-cbom-manual/</link>
+      <description>Implementation guide for generating CycloneDX 1.6 Cryptographic Bills of Materials (CBOM) with crypto-cbom, auditing them for weak algorithms, and using them as inventory input for EU DORA ICT risk work.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/dora-cbom-manual/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Contact — Crypto Service Suite</title>
+      <link>https://crypto-service.co/contact/</link>
+      <description>How to ask questions, report bugs and report security vulnerabilities for Crypto Service Suite.</description>
+      <guid isPermaLink="true">https://crypto-service.co/contact/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Crypto Service vs BitGo: Non-Custodial Architecture vs Hosted Intermediaries</title>
+      <link>https://crypto-service.co/compare/bitgo/</link>
+      <description>Detailed institutional architecture comparison between Crypto Service Suite and BitGo across non-custodial execution, post-quantum readiness, and fee structures.</description>
+      <guid isPermaLink="true">https://crypto-service.co/compare/bitgo/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Crypto Service vs Copper: Mathematical Sovereignty vs Custodial Networks</title>
+      <link>https://crypto-service.co/compare/copper/</link>
+      <description>Institutional comparison of Crypto Service Suite and Copper: Mathematical zero-trust cryptography vs centralized custodial networks.</description>
+      <guid isPermaLink="true">https://crypto-service.co/compare/copper/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Crypto Service vs Fireblocks: Post-Quantum Architecture vs Pre-Quantum MPC</title>
+      <link>https://crypto-service.co/compare/fireblocks/</link>
+      <description>Comparison of Crypto Service Suite and Fireblocks Treasury Management: Post-quantum FIPS 203/204 lattice cryptography vs legacy elliptic curve MPC.</description>
+      <guid isPermaLink="true">https://crypto-service.co/compare/fireblocks/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Crypto Service vs Hedera: Universal Cryptography vs Public DLT Networks</title>
+      <link>https://crypto-service.co/compare/hedera/</link>
+      <description>Architecture comparison of Crypto Service Suite and Hedera Hashgraph: Infrastructure-agnostic quantum-safe cryptography vs proprietary consensus network tokens.</description>
+      <guid isPermaLink="true">https://crypto-service.co/compare/hedera/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets</title>
+      <link>https://crypto-service.co/whitepapers/hndl-threat-model/</link>
+      <description>Authoritative threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial records, corporate secrets, and long-dated customer archives.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/hndl-threat-model/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Institutional Comparisons & Competitive Moat — Crypto Service Suite</title>
+      <link>https://crypto-service.co/compare/</link>
+      <description>In-depth architectural comparison between Crypto Service Suite and legacy custodial platforms: BitGo, Copper, Fireblocks, and Hedera.</description>
+      <guid isPermaLink="true">https://crypto-service.co/compare/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Institutional White Papers & Technical Publications — Crypto Service</title>
+      <link>https://crypto-service.co/whitepapers/</link>
+      <description>Authoritative white papers, cryptographic research publications, and banking infrastructure architectural briefs published by Sebastien Rousseau and the Crypto Service team.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Modular Crypto as a Service (CaaS) Solutions — Crypto Service Suite</title>
+      <link>https://crypto-service.co/solutions/</link>
+      <description>Self-hosted Crypto-as-a-Service (CaaS) building blocks for fintechs, banks, and enterprise engineering teams: post-quantum primitives, a REST service, a KMS interface, database field encryption, edge runtime support, and CycloneDX CBOM generation.</description>
+      <guid isPermaLink="true">https://crypto-service.co/solutions/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>News, Research & Institutional Insights — Crypto Service</title>
+      <link>https://crypto-service.co/news/</link>
+      <description>Latest news, cryptographic research publications, whitepapers, and event announcements from the Crypto Service Suite project.</description>
+      <guid isPermaLink="true">https://crypto-service.co/news/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Page not found — Crypto Service Suite</title>
+      <link>https://crypto-service.co/404/</link>
+      <description>That address does not match a page in Crypto Service Suite. Return to the home page to explore solutions, packages, and documentation.</description>
+      <guid isPermaLink="true">https://crypto-service.co/404/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Post-Quantum Benchmarks: Method, Sizes and Status</title>
+      <link>https://crypto-service.co/whitepapers/sub-millisecond-benchmarks/</link>
+      <description>How to benchmark NIST FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) operations in Crypto Service Suite with the committed benchmark code, plus the key, ciphertext and signature sizes fixed by the standards.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/sub-millisecond-benchmarks/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Post-Quantum Migration Architecture & Interbank Settlement Rails</title>
+      <link>https://crypto-service.co/whitepapers/interbank-rails/</link>
+      <description>Technical architecture white paper detailing the migration of wholesale banking settlement engines, ISO 20022 message payloads (pacs.008, pain.001), and high-throughput SWIFT/Fedwire rails to post-quantum cryptography.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/interbank-rails/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Quantum-Safe Payments: Why the Payments Industry Must Act Now</title>
+      <link>https://crypto-service.co/whitepapers/quantum-safe-payments/</link>
+      <description>Authoritative industry white paper produced for the Emerging Payments Association Asia (EPAA) by Sebastien Rousseau, analyzing the quantum threat to wholesale payment rails, SWIFT, RTGS, and instant payments.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/quantum-safe-payments/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions</title>
+      <link>https://crypto-service.co/whitepapers/sovereign-caas/</link>
+      <description>Architecture white paper on running a self-hosted Cryptography-as-a-Service (CaaS) tier with crypto-server inside a private VPC, what the suite provides today, and how it fits EU DORA ICT risk work.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/sovereign-caas/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Standards & Regulatory Alignment — Post-Quantum Financial Architecture</title>
+      <link>https://crypto-service.co/standards/</link>
+      <description>Which standards Crypto Service Suite implements (NIST FIPS 203/204/205 algorithms, RFC 9180, CycloneDX) and how it relates to EU DORA and NSA CNSA 2.0. Implemented algorithms are not a certification.</description>
+      <guid isPermaLink="true">https://crypto-service.co/standards/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>The 2027 Post-Quantum Strategic Horizon & Cryptographic Audit</title>
+      <link>https://crypto-service.co/whitepapers/strategic-horizon-2027/</link>
+      <description>Authoritative executive treatise examining the 2027 post-quantum transition horizon, NIST FIPS 203/204/205 standards, US NSA CNSA 2.0 timelines, and institutional audit methodologies.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/strategic-horizon-2027/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>The Crypto Service Ecosystem — 18 Workspace Packages & Enterprise Modules</title>
+      <link>https://crypto-service.co/ecosystem/</link>
+      <description>Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic primitives, CaaS servers, KMS brokers, edge runtimes, and developer tooling.</description>
+      <guid isPermaLink="true">https://crypto-service.co/ecosystem/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+    <item>
+      <title>Transparent Column-Level Database Encryption with Prisma & TypeORM</title>
+      <link>https://crypto-service.co/whitepapers/database-encryption/</link>
+      <description>Engineering white paper on transparent field-level authenticated encryption (XChaCha20-Poly1305) with the crypto-prisma and crypto-typeorm adapters: how they work today and what they do not yet do.</description>
+      <guid isPermaLink="true">https://crypto-service.co/whitepapers/database-encryption/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+    </item>
+  </channel>
+</rss>

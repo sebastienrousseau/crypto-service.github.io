@@ -1,0 +1,16 @@
+{
+  "author": "Sebastien Rousseau",
+  "date": "2026-10-04",
+  "description": "Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic primitives, CaaS servers, KMS brokers, edge runtimes, and developer tooling.",
+  "eyebrow": "Monorepo Architecture & Modules",
+  "headline": "An Integrated Post-Quantum Ecosystem Built in Lockstep",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "From cryptographic primitives to a multi-cloud KMS interface, AI agent protocols and a REST service: all 18 packages move together in lockstep, with 100% CI coverage floor across every package.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "reading_time": 3,
+  "title": "The Crypto Service Ecosystem — 18 Workspace Packages & Enterprise Modules",
+  "word_count": 744
+}

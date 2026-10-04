@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Comparison of Crypto Service Suite and Fireblocks Treasury Management: Post-quantum FIPS 203/204 lattice cryptography vs",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

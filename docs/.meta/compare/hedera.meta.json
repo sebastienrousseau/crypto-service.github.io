@@ -1,0 +1,20 @@
+{
+  "author": "Sebastien Rousseau",
+  "cta_primary": "Explore 18 Packages",
+  "date": "2026-09-28",
+  "description": "Architecture comparison of Crypto Service Suite and Hedera Hashgraph: Infrastructure-agnostic quantum-safe cryptography vs proprietary consensus network tokens.",
+  "eyebrow": "DLT Infrastructure Analysis",
+  "headline": "Universal Cryptographic Substrate vs. Public DLT Networks",
+  "language": "en-GB",
+  "layout": "page",
+  "lead": "Understand the fundamental boundary between protocol-level cryptographic operations and public distributed ledger consensus.",
+  "light_trace_alt": "Pastel morphing gradient with organic glass droplets",
+  "logo_alt": "Crypto Service Suite logo",
+  "name": "Crypto Service",
+  "nav_faq": "FAQ",
+  "nav_overview": "Architecture",
+  "nav_security": "Security",
+  "reading_time": 2,
+  "title": "Crypto Service vs Hedera: Universal Cryptography vs Public DLT Networks",
+  "word_count": 501
+}

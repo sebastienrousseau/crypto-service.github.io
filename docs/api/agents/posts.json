@@ -1,0 +1,200 @@
+[
+  {
+    "date": "2026-09-28",
+    "description": "Institutional governance, engineering philosophy, and architectural standards behind the 18 lockstep packages in Crypto Service Suite.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "About Us & Institutional Governance — Crypto Service Suite",
+    "url": "https://crypto-service.co/about/",
+    "wordCount": 515
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Detailed institutional architecture comparison between Crypto Service Suite and BitGo across non-custodial execution, post-quantum readiness, and fee structures.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Crypto Service vs BitGo: Non-Custodial Architecture vs Hosted Intermediaries",
+    "url": "https://crypto-service.co/compare/bitgo/",
+    "wordCount": 527
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Institutional comparison of Crypto Service Suite and Copper: Mathematical zero-trust cryptography vs centralized custodial networks.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Crypto Service vs Copper: Mathematical Sovereignty vs Custodial Networks",
+    "url": "https://crypto-service.co/compare/copper/",
+    "wordCount": 501
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Comparison of Crypto Service Suite and Fireblocks Treasury Management: Post-quantum FIPS 203/204 lattice cryptography vs legacy elliptic curve MPC.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Crypto Service vs Fireblocks: Post-Quantum Architecture vs Pre-Quantum MPC",
+    "url": "https://crypto-service.co/compare/fireblocks/",
+    "wordCount": 492
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Architecture comparison of Crypto Service Suite and Hedera Hashgraph: Infrastructure-agnostic quantum-safe cryptography vs proprietary consensus network tokens.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Crypto Service vs Hedera: Universal Cryptography vs Public DLT Networks",
+    "url": "https://crypto-service.co/compare/hedera/",
+    "wordCount": 501
+  },
+  {
+    "date": "2026-09-28",
+    "description": "In-depth architectural comparison between Crypto Service Suite and legacy custodial platforms: BitGo, Copper, Fireblocks, and Hedera.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Institutional Comparisons & Competitive Moat — Crypto Service Suite",
+    "url": "https://crypto-service.co/compare/index.html",
+    "wordCount": 1154
+  },
+  {
+    "date": "2026-09-28",
+    "description": "How to ask questions, report bugs and report security vulnerabilities for Crypto Service Suite.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Contact — Crypto Service Suite",
+    "url": "https://crypto-service.co/contact/",
+    "wordCount": 230
+  },
+  {
+    "date": "2026-10-04",
+    "description": "Explore the comprehensive Crypto Service monorepo architecture: 18 lockstep packages spanning post-quantum cryptographic primitives, CaaS servers, KMS brokers, edge runtimes, and developer tooling.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "The Crypto Service Ecosystem — 18 Workspace Packages & Enterprise Modules",
+    "url": "https://crypto-service.co/ecosystem/",
+    "wordCount": 744
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Self-hostable, open-source cryptography toolkit for fintechs, banks, and enterprise engineering teams: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (via @noble/post-quantum; not a validated cryptographic module), a KMS interface, database field encryption, and CycloneDX CBOM generation across 18 lockstep packages.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Crypto Service Suite — Post-Quantum Cryptographic Infrastructure for Modern Enterprise",
+    "url": "https://crypto-service.co/index.html",
+    "wordCount": 6
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Latest news, cryptographic research publications, whitepapers, and event announcements from the Crypto Service Suite project.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "News, Research & Institutional Insights — Crypto Service",
+    "url": "https://crypto-service.co/news/",
+    "wordCount": 920
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Authoritative research white paper examining the 2027 post-quantum transition horizon, Harvest Now Decrypt Later (HNDL) threats, lattice-based cryptography benchmarks, and architectural defense.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "2027 Post-Quantum Strategic Horizon & Cryptographic Audit",
+    "url": "https://crypto-service.co/research/",
+    "wordCount": 1211
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Self-hosted Crypto-as-a-Service (CaaS) building blocks for fintechs, banks, and enterprise engineering teams: post-quantum primitives, a REST service, a KMS interface, database field encryption, edge runtime support, and CycloneDX CBOM generation.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Modular Crypto as a Service (CaaS) Solutions — Crypto Service Suite",
+    "url": "https://crypto-service.co/solutions/",
+    "wordCount": 1429
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Which standards Crypto Service Suite implements (NIST FIPS 203/204/205 algorithms, RFC 9180, CycloneDX) and how it relates to EU DORA and NSA CNSA 2.0. Implemented algorithms are not a certification.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Standards & Regulatory Alignment — Post-Quantum Financial Architecture",
+    "url": "https://crypto-service.co/standards/",
+    "wordCount": 614
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Engineering white paper on transparent field-level authenticated encryption (XChaCha20-Poly1305) with the crypto-prisma and crypto-typeorm adapters: how they work today and what they do not yet do.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Transparent Column-Level Database Encryption with Prisma & TypeORM",
+    "url": "https://crypto-service.co/whitepapers/database-encryption/",
+    "wordCount": 830
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Implementation guide for generating CycloneDX 1.6 Cryptographic Bills of Materials (CBOM) with crypto-cbom, auditing them for weak algorithms, and using them as inventory input for EU DORA ICT risk work.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "CBOM Manual: Cryptographic Inventories for DORA Work",
+    "url": "https://crypto-service.co/whitepapers/dora-cbom-manual/",
+    "wordCount": 834
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Authoritative threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial records, corporate secrets, and long-dated customer archives.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets",
+    "url": "https://crypto-service.co/whitepapers/hndl-threat-model/",
+    "wordCount": 1278
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Authoritative white papers, cryptographic research publications, and banking infrastructure architectural briefs published by Sebastien Rousseau and the Crypto Service team.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Institutional White Papers & Technical Publications — Crypto Service",
+    "url": "https://crypto-service.co/whitepapers/index.html",
+    "wordCount": 1409
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Technical architecture white paper detailing the migration of wholesale banking settlement engines, ISO 20022 message payloads (pacs.008, pain.001), and high-throughput SWIFT/Fedwire rails to post-quantum cryptography.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Post-Quantum Migration Architecture & Interbank Settlement Rails",
+    "url": "https://crypto-service.co/whitepapers/interbank-rails/",
+    "wordCount": 1037
+  },
+  {
+    "date": "2025-09-01",
+    "description": "Authoritative industry white paper produced for the Emerging Payments Association Asia (EPAA) by Sebastien Rousseau, analyzing the quantum threat to wholesale payment rails, SWIFT, RTGS, and instant payments.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Quantum-Safe Payments: Why the Payments Industry Must Act Now",
+    "url": "https://crypto-service.co/whitepapers/quantum-safe-payments/",
+    "wordCount": 1363
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Architecture white paper on running a self-hosted Cryptography-as-a-Service (CaaS) tier with crypto-server inside a private VPC, what the suite provides today, and how it fits EU DORA ICT risk work.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions",
+    "url": "https://crypto-service.co/whitepapers/sovereign-caas/",
+    "wordCount": 959
+  },
+  {
+    "date": "2026-09-28",
+    "description": "Authoritative executive treatise examining the 2027 post-quantum transition horizon, NIST FIPS 203/204/205 standards, US NSA CNSA 2.0 timelines, and institutional audit methodologies.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "The 2027 Post-Quantum Strategic Horizon & Cryptographic Audit",
+    "url": "https://crypto-service.co/whitepapers/strategic-horizon-2027/",
+    "wordCount": 1331
+  },
+  {
+    "date": "2026-09-28",
+    "description": "How to benchmark NIST FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) operations in Crypto Service Suite with the committed benchmark code, plus the key, ciphertext and signature sizes fixed by the standards.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Post-Quantum Benchmarks: Method, Sizes and Status",
+    "url": "https://crypto-service.co/whitepapers/sub-millisecond-benchmarks/",
+    "wordCount": 460
+  }
+]

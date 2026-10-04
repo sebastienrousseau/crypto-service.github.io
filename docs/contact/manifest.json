@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "How to ask questions, report bugs and report security vulnerabilities for Crypto Service Suite.",
+  "display": "standalone",
+  "icons": [],
+  "name": "Crypto Service",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}
