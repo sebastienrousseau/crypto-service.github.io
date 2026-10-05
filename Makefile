@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
-# Semantic Version: v0.0.1
+# Semantic Version: v0.0.20
 .PHONY: all build clean demo help
 
 all: build
