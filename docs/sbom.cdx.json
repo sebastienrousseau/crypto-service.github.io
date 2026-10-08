@@ -2,7 +2,7 @@
   "bomFormat": "CycloneDX",
   "components": [
     {
-      "bom-ref": "ssg@0.0.63",
+      "bom-ref": "ssg@0.0.66",
       "description": "Static site generator",
       "externalReferences": [
         {
@@ -27,9 +27,9 @@
         }
       ],
       "name": "ssg",
-      "purl": "pkg:cargo/ssg@0.0.63",
+      "purl": "pkg:cargo/ssg@0.0.66",
       "type": "application",
-      "version": "0.0.63"
+      "version": "0.0.66"
     }
   ],
   "metadata": {
@@ -39,15 +39,16 @@
       "name": "static-site",
       "type": "application"
     },
-    "timestamp": "2026-10-08T08:26:38Z",
+    "timestamp": "2026-10-08T11:02:42Z",
     "tools": [
       {
         "name": "ssg",
         "vendor": "SSG Contributors",
-        "version": "0.0.63"
+        "version": "0.0.66"
       }
     ]
   },
+  "serialNumber": "urn:uuid:847e0091-c88f-894e-a297-ec4238a6f9c4",
   "specVersion": "1.5",
   "version": 1
 }

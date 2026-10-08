@@ -25,10 +25,10 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-wRVA+0hoCSBbZ3OElQoxxnQ8QsND/yWlDIf1QleI0TQ='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /about/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-mJOCxnL+fmetn0Nk24fQKivFgRJz3MdtGrkeO5Yzi0Y='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-inmyxqzCjRWyUGOPg2KE71BH8pHjmxs4ArbdQkNhJZw='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /compare/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-cbnlisMelAKE2HfpY7oOLtxFY8Zve93CcLNkqgwoixY=' 'sha256-70FhDTOUMqDzjHiMnNxCT6h6jXgj3T2bpefAGPeq1vU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-6wu2Ohor1FiRLOHT5WeBdOqv9i/XKPNERvMZso3GC8o=' 'sha256-70FhDTOUMqDzjHiMnNxCT6h6jXgj3T2bpefAGPeq1vU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /compare/bitgo/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-GmRPj2XM3bNfrL08Ilf4yFqLUne0Z5p1OE5o2kvOV6M='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
@@ -46,25 +46,25 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Jcw4NTk1vMOd/X0CSLk5FU/+qaNyklVyZ/e86c3Hlys='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /ecosystem/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-DjBLfGGyXtH9TuyLQXPHYmPWhJdvfE12RS3qA+mB8Ik='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Y8G6Ch5D3NGxI73wr6yg+e8jtrfyBydMKu7QXfCue0Q='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /news/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-bL6SirACsgWz+nRxTnHXqWwF8RNurO0XmzrSFThdqQ4='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-4TjF2YYC8xvGNc18yTCjiLBRJnyRyNdxrpPo4VANKvQ='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /research/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-jsn2S1PyhZAUzV5+oPQV8ZFE0rzGFnnlqAdxsx86yGM='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Qi+6QHIoXvnMlMhTO7krcQXyoB3peVS1d73tWj/FBcc='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /solutions/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-u98cCJiyPxRfqhA2Gsn9eGTFeHglhqRGYAw153LUvaE='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /standards/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-SiG7DEt2zmjXrfKIKiARWLlS32qvKmZJD1HYe8axm04='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-rIF4J/A17qGec4jaT0YD2A3b9GuCyOPmyQkmlOLkSVU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-HZ8796yb4RDW2Qj0FvMvm/JZn05LX4P6JyDnWA1Xe7Y='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-eSvXesmkqXro12NXQyYzHtJP15cVOGZOLxlm1otyjtQ='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/database-encryption/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-G1LJGPiFMCfNTKmanP//fjDEjwfXc9tvzoXBdhOsQnU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-yVN9dOcLaTOTOLyrfw5NhYDt27MR/xEidLTydmLtOHo='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/dora-cbom-manual/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-LUfGqf4Ra1dlmzOCc/HhrmcMqhTocc6/0eHaq5COUzE='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
@@ -73,7 +73,7 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-pFBestcYDEtaCfYNMAzsrfkhqnPVl2ABZjr9sVcRb2w='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/interbank-rails/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-WBkWUbKeowZ4EV8ggIZP1yqPy50YMD73XZ6IXevtChE='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-SeM3VkbDwQbAQVmaQFuW4VCi7EJnFn4J120xmN3bDK4='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/quantum-safe-payments/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-yYn5iXLWRvBBqCrPH4gme9OR4SWEXdKUEDy1ErWw7eU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
@@ -82,7 +82,7 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-YblApC83SB8FttyHblD/F9lxPJE03R42OVODjNG9fyU='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/strategic-horizon-2027/
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-KR6R0HDTt5PpSJGmAMf+xCSMEsgBLYwez9kTR2fCz/0='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Hc7v2Akn8D14CPmwMdUujZq+ZRMgtybISMLuMnMBX2w='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
 
 /whitepapers/sub-millisecond-benchmarks/
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-R7w2d2poqsZe7i+QnNiyb+fo2hldswVu2ElZxzolvhE='; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
