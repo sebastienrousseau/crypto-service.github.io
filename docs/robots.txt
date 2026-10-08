@@ -1,4 +1,39 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Robots.txt for Crypto Service Suite (https://crypto-service.co/)
+
 User-agent: *
 Allow: /
 
-Sitemap: https://corrallib.com/sitemap.xml
+# Agentic AI & Generative Search Crawlers (AEO / GEO / Grounding Access)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+# Canonical Sitemaps
+Sitemap: https://crypto-service.co/sitemap.xml

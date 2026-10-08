@@ -448,6 +448,18 @@ p, .lead-text, .lead {
   justify-content: space-between;
 }
 
+@media (max-width: 640px) {
+  .swift-header-inner {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .swift-header-inner {
+    padding: 0 0.5rem;
+  }
+}
+
 .swift-header-left {
   display: flex;
   align-items: center;
@@ -485,6 +497,18 @@ p, .lead-text, .lead {
   letter-spacing: -0.025em;
   color: inherit;
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .swift-brand-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .swift-brand-text {
+    font-size: 0.95rem;
+  }
 }
 
 .swift-nav-menu {
@@ -810,6 +834,24 @@ p, .lead-text, .lead {
   align-items: center;
   gap: 1.5rem;
   flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .swift-header-right {
+    gap: 0.5rem;
+  }
+  .swift-contact-link {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swift-header-right {
+    gap: 0.35rem;
+  }
+  .swift-lang-select {
+    display: none !important;
+  }
 }
 
 .swift-contact-link {
@@ -2695,8 +2737,10 @@ h1 {
   background: #f3f4f6;
   color: #090a0f;
 }
-:root[data-theme="light"] #mode-toggle .theme-icon::before { content: "☀️"; }
-:root[data-theme="dark"] #mode-toggle .theme-icon::before { content: "🌙"; }
+:root[data-theme-mode="light"] #mode-toggle .theme-icon::before { content: "☀️"; }
+:root[data-theme-mode="dark"] #mode-toggle .theme-icon::before { content: "🌙"; }
+:root[data-theme-mode="system"] #mode-toggle .theme-icon::before,
+:root:not([data-theme-mode]) #mode-toggle .theme-icon::before { content: "🖥️"; }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) #mode-toggle.theme-toggle {
     border-color: #878d9b;
@@ -2767,6 +2811,11 @@ h1 {
   width: 100%;
 }
 
+.swift-hero-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
 @media (max-width: 992px) {
   .swift-hero-grid {
     grid-template-columns: 1fr;
@@ -2776,6 +2825,8 @@ h1 {
 
 .hero-glass-card {
   max-width: 680px;
+  width: 100%;
+  min-width: 0;
 }
 
 .hero-quickstart-card {
@@ -2788,6 +2839,15 @@ h1 {
   padding: 1.75rem;
   overflow: hidden;
   transition: var(--transition-card);
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .hero-quickstart-card {
+    padding: 1.25rem 1rem;
+  }
 }
 
 .hero-quickstart-card:hover {
@@ -2852,6 +2912,8 @@ h1 {
   line-height: 1.6;
   color: #e2e8f0;
   overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 0 0 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -2861,6 +2923,9 @@ h1 {
   padding: 0;
   background: transparent;
   border: none;
+  max-width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
 }
 
 .hero-code-block code {
@@ -2869,6 +2934,7 @@ h1 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
+  overflow: visible;
 }
 
 .quickstart-footer {
@@ -3169,7 +3235,7 @@ h1 {
 
 .swift-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2.25rem;
 }
 
@@ -3228,6 +3294,10 @@ h1 {
   font-size: 0.8125rem;
   color: #475569;
   margin-bottom: 0.65rem;
+}
+
+[data-theme="dark"] .swift-card-meta {
+  color: #94a3b8;
 }
 
 .swift-card-title {
@@ -3346,7 +3416,7 @@ h1 {
 .swift-section-title {
   font-size: 2.75rem;
   font-weight: 300;
-  color: #1c2833;
+  color: var(--fg);
   letter-spacing: -0.02em;
   margin: 0;
 }
@@ -3359,7 +3429,18 @@ h1 {
   display: flex;
   gap: 2rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
   scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .swift-section-title {
+    font-size: 1.85rem;
+  }
+  .swift-tabs-nav {
+    gap: 1.25rem;
+  }
 }
 
 .swift-tabs-nav::-webkit-scrollbar {
@@ -3658,6 +3739,23 @@ h1 {
   transform: translateY(-1px);
 }
 
+@media (max-width: 768px) {
+  .swift-banner-inner {
+    padding: 2rem 1.25rem;
+    gap: 1.5rem;
+  }
+  .swift-banner-title {
+    font-size: 1.5rem;
+  }
+  .swift-btn-banner-login {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
 /* 3-Card Resource Grid */
 .swift-resources-section {
   padding: 2rem 0 5rem;
@@ -3666,18 +3764,24 @@ h1 {
 
 .swift-resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2rem;
 }
 
 .swift-resource-card {
   padding: 2.5rem;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .swift-resource-card {
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 [data-theme="dark"] .swift-resource-card {
@@ -3693,7 +3797,7 @@ h1 {
 .resource-badge {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #005950;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.75rem;
@@ -3707,7 +3811,7 @@ h1 {
   font-size: 1.35rem;
   font-weight: 600;
   margin: 0 0 0.75rem 0;
-  color: #1c2833;
+  color: var(--fg);
 }
 
 [data-theme="dark"] .resource-title {
@@ -3717,7 +3821,7 @@ h1 {
 .resource-desc {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #475569;
+  color: var(--fg-muted);
   margin: 0 0 1.5rem 0;
   flex-grow: 1;
 }
@@ -3735,8 +3839,8 @@ h1 {
 .swift-bic-search-form {
   display: flex;
   align-items: center;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
   border-radius: 9999px;
   padding: 0.35rem 0.45rem 0.35rem 1.25rem;
   margin: 1rem 0 1.5rem 0;
@@ -3751,7 +3855,7 @@ h1 {
   border: none;
   background: transparent;
   font-size: 0.875rem;
-  color: #1c2833;
+  color: var(--fg);
   width: 100%;
   outline: none;
 }
@@ -3939,6 +4043,7 @@ h1 {
 }
 
 .footer-desc {
+  color: #cbd5e1;
   max-width: 480px;
   line-height: 1.6;
   margin: 0 0 0.5rem 0;
@@ -4428,7 +4533,7 @@ h1 {
 .packages-grid,
 .news-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
 }
 
@@ -4668,7 +4773,7 @@ h1 {
 
 .whitepaper-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 1.75rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;

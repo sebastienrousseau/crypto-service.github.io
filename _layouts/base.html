@@ -40,12 +40,33 @@
     <link rel="icon" type="image/svg+xml" href="{{site_path}}images/favicon.svg" />
     <link rel="apple-touch-icon" href="{{site_path}}images/favicon.svg" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a" />
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{site_url}}#organization",
+          "name": "Crypto Service",
+          "url": "{{site_url}}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{site_url}}assets/crypto-service-logo.svg"
+          },
+          "sameAs": [
+            "https://github.com/sebastienrousseau/crypto-service",
+            "https://x.com/sebastienrousseau",
+            "https://linkedin.com/company/sebastienrousseau"
+          ],
+          "founder": {
+            "@type": "Person",
+            "name": "Sebastien Rousseau",
+            "url": "https://sebastienrousseau.com/"
+          }
+        },
         {
           "@type": "SoftwareApplication",
           "@id": "{{site_url}}#software",
@@ -59,7 +80,7 @@
             "priceCurrency": "USD"
           },
           "description": "Modular Post-Quantum Crypto-as-a-Service (CaaS) operating core for tier-1 banks, custodians, and enterprise treasuries. FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module) across 18 lockstep packages.",
-          "softwareVersion": "0.0.21",
+          "softwareVersion": "0.0.24",
           "license": [
             "https://spdx.org/licenses/Apache-2.0.html",
             "https://spdx.org/licenses/MIT.html"
@@ -75,7 +96,10 @@
           "author": {
             "@type": "Person",
             "name": "{{author}}",
-            "url": "{{site_url}}"
+            "url": "https://sebastienrousseau.com/"
+          },
+          "publisher": {
+            "@id": "{{site_url}}#organization"
           }
         },
         {
@@ -86,9 +110,7 @@
           "url": "{{site_url}}",
           "serviceType": "Cryptographic Infrastructure & Key Orchestration",
           "provider": {
-            "@type": "Person",
-            "name": "Sebastien Rousseau",
-            "url": "https://sebastienrousseau.com/"
+            "@id": "{{site_url}}#organization"
           }
         },
         {

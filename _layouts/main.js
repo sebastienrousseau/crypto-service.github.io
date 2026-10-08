@@ -15,11 +15,17 @@
      two-way switch stamped data-theme on the first click and never removed
      it. The mode icon is rendered by CSS so its dimensions are reserved
      before this deferred script runs, preventing a header layout shift. */
+  /* Three states: "system", "light", "dark". The active palette is stamped
+     onto data-theme ("dark" | "light") so all CSS rules and glass surfaces
+     resolve with 100% precision, while data-theme-mode tracks user choice. */
   var ORDER = ["system", "light", "dark"];
 
   function currentMode() {
-    var set = document.documentElement.getAttribute("data-theme");
-    return set === "light" || set === "dark" ? set : "system";
+    var mode = document.documentElement.getAttribute("data-theme-mode");
+    if (mode === "system" || mode === "light" || mode === "dark") return mode;
+    var saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    return saved === "light" || saved === "dark" ? saved : "system";
   }
 
   function labelFor(mode, btn, state) {
@@ -27,14 +33,21 @@
     return btn.getAttribute("data-label-" + mode) || (mode === "light" ? "Light" : "Dark");
   }
 
+  function effectiveTheme(mode) {
+    if (mode === "dark") return "dark";
+    if (mode === "light") return "light";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
   function setMode(mode) {
     if (mode === "system") {
-      document.documentElement.removeAttribute("data-theme");
       try { localStorage.removeItem("theme"); } catch (e) {}
     } else {
-      document.documentElement.setAttribute("data-theme", mode);
       try { localStorage.setItem("theme", mode); } catch (e) {}
     }
+    var eff = effectiveTheme(mode);
+    document.documentElement.setAttribute("data-theme", eff);
+    document.documentElement.setAttribute("data-theme-mode", mode);
     var btn = document.getElementById("mode-toggle");
     if (!btn) return;
     var state = document.getElementById("mode-state");
@@ -42,6 +55,14 @@
   }
 
   setMode(currentMode());
+
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+      if (currentMode() === "system") {
+        document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "light");
+      }
+    });
+  }
 
   document.addEventListener("click", function (e) {
     var btn = e.target.closest("#mode-toggle");

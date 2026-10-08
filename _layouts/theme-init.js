@@ -1,22 +1,24 @@
 /*!
- * Runs before first paint so a stored choice applies without a flash of the
- * wrong palette.
+ * Runs before first paint so a stored choice or system preference applies
+ * without a flash of the wrong palette.
  *
- * Only an explicit choice is stamped onto <html>. With nothing stored the
- * attribute is deliberately left off so the stylesheet's prefers-color-scheme
- * block decides and the page follows the OS. The previous version always
- * stamped a value, which meant "system" could never be the current state:
- * the mode control had no way to express it.
+ * Evaluates the active palette and stamps data-theme ("dark" | "light")
+ * and data-theme-mode ("system" | "light" | "dark") onto <html> so all CSS
+ * selectors and theme variables resolve with 100% consistency.
  */
 (function () {
   var root = document.documentElement;
   root.classList.remove("no-js");
   try {
     var saved = localStorage.getItem("theme");
-    if (saved === "dark" || saved === "light") {
-      root.setAttribute("data-theme", saved);
-    }
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var mode = (saved === "dark" || saved === "light") ? saved : "system";
+    var effective = (saved === "dark" || saved === "light") ? saved : (prefersDark ? "dark" : "light");
+    root.setAttribute("data-theme", effective);
+    root.setAttribute("data-theme-mode", mode);
   } catch (e) {
-    /* Private browsing or blocked storage: follow the OS. */
+    var prefersDarkFallback = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    root.setAttribute("data-theme", prefersDarkFallback ? "dark" : "light");
+    root.setAttribute("data-theme-mode", "system");
   }
 })();

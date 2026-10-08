@@ -15,7 +15,7 @@ def post_build():
                 shutil.rmtree(dest)
             shutil.copytree(folder, dest)
 
-    for single_file in ["favicon.ico", "robots.txt", "security.txt"]:
+    for single_file in ["favicon.ico", "robots.txt", "security.txt", "llms.txt"]:
         if os.path.isfile(single_file):
             shutil.copy2(single_file, os.path.join(output_dir, single_file))
 
@@ -41,9 +41,12 @@ def post_build():
                 else:
                     all_pages.add(f"{base_url}/{rel_path}")
 
+    from datetime import date
+    today_str = date.today().isoformat()
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for p in sorted(all_pages):
-        sitemap_xml += f'  <url>\n    <loc>{p}</loc>\n    <lastmod>2026-10-04</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+        priority = "1.0" if p == f"{base_url}/" else "0.8"
+        sitemap_xml += f'  <url>\n    <loc>{p}</loc>\n    <lastmod>{today_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{priority}</priority>\n  </url>\n'
     sitemap_xml += '</urlset>\n'
 
     for d in [output_dir, docs_dir]:
@@ -51,28 +54,8 @@ def post_build():
             f.write(sitemap_xml)
         with open(os.path.join(d, "CNAME"), "w", encoding="utf-8") as f:
             f.write("crypto-service.co\n")
-
-    llms_txt = f"""# Crypto Service Suite
-> Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms, KMS provider interface, database field encryption, and CycloneDX CBOM generation across 18 lockstep packages.
-
-## Documentation Hub
-- Ecosystem Documentation Portal: https://docs.crypto-service.co/
-- Package Documentation: https://docs.crypto-service.co/packages/crypto-lib/index.html
-
-## Core Website Pages
-- Homepage: {base_url}/
-- Ecosystem Overview: {base_url}/ecosystem.html
-- Solutions: {base_url}/solutions.html
-- Cryptographic Standards: {base_url}/standards.html
-- Whitepapers: {base_url}/whitepapers/index.html
-- Competitive Comparisons: {base_url}/compare/index.html
-- Research: {base_url}/research.html
-- About: {base_url}/about.html
-- Contact: {base_url}/contact.html
-"""
-    for d in [output_dir, docs_dir]:
-        with open(os.path.join(d, "llms.txt"), "w", encoding="utf-8") as f:
-            f.write(llms_txt)
+        if os.path.isfile("llms.txt"):
+            shutil.copy2("llms.txt", os.path.join(d, "llms.txt"))
 
     for base_path in [output_dir, docs_dir]:
         for html_file in glob.glob(f"{base_path}/**/*.html", recursive=True):
