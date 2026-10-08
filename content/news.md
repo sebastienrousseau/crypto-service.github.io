@@ -15,14 +15,14 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 
 <!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
-<section class="news-featured-section" id="release-v0020">
+<section class="news-featured-section" id="release-v0024">
 <div class="news-spotlight-card">
 <div class="news-tag font-mono">LATEST RELEASE • OCTOBER 2026</div>
-<h2>Crypto Service Suite v0.0.20 Released with Post-Quantum Security &amp; Documentation Portal</h2>
+<h2>Crypto Service Suite v0.0.24 Released with Post-Quantum Digital Signatures &amp; Property Fuzz Testing</h2>
 <p class="lead-text">
-We are proud to announce the general availability of Crypto Service Suite v0.0.20 across all 18 monorepo workspace packages. This iteration establishes a dedicated TypeDoc documentation portal at docs.crypto-service.co, purges vulnerable transitive dependencies to zero audit findings, advances post-quantum hybrid HPKE, and synchronizes the entire ecosystem in strict lockstep.
+We are proud to announce the general availability of Crypto Service Suite v0.0.24 across all 18 monorepo workspace packages. This iteration implements FIPS 204 ML-DSA digital signatures, multi-recipient hybrid KEM broadcast key wrapping, route rate limiting, OPAQUE collision rejection, CORS hardening, comprehensive fast-check property fuzz testing, and 100% test coverage floor across the entire ecosystem.
 </p>
-<div class="news-meta font-mono">Published October 4, 2026 • 5 min read • Core Engineering Team</div>
+<div class="news-meta font-mono">Published October 8, 2026 • 5 min read • Core Engineering Team</div>
 </div>
 </section>
 
