@@ -1,11 +1,21 @@
 {{#extends "base"}}
 {{#block "main"}}
-<section class="section text-center">
-  <div class="container narrow stack">
-    <p class="eyebrow">{{eyebrow}}</p>
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
+<section class="page-hero">
+  <div class="container hero-copy">
+    <p class="eyebrow eyebrow-hero">{{eyebrow}}</p>
     <h1>{{headline}}</h1>
-    <p>{{lead}}</p>
-    <p><a class="btn btn-primary" href="{{site_path}}">{{nf_cta}}</a></p>
+    <p class="lead hero-lead">{{lead}}</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/">{{nf_cta}}</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <article class="content-body cs-content">
+      {{!content}}
+    </article>
   </div>
 </section>
 {{/block}}

@@ -1,6 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
 .DS_Store
-public/
-dist/
+*.log
+__pycache__/
+*.py[cod]
+
+# Build staging and the built site. CI builds the site and deploys it as
+# the GitHub Pages artifact; built output is never committed.
+/.build/
+/site/
+/public/
+/dist/
 .cache/
 node_modules/
-*.log
+
+# Local agent worktrees
+.claude/

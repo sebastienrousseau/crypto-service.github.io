@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
+<!-- PRISM shell, as used by pain001.com. `no-js` is removed before first
+     paint by /js/prism-theme-init.js. -->
 <html lang="{{language}}" class="no-js">
   <head>
     <meta charset="utf-8" />
@@ -6,8 +9,8 @@
     <title>{{title}}</title>
     <meta name="description" content="{{description}}" />
 
-    <!-- Strict same-origin policy; see README "Security". `form_origin`
-         must name your form endpoint or the browser blocks the POST. -->
+    <!-- Strict same-origin policy: every script, style and font is served
+         from this origin. -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self';
@@ -19,8 +22,9 @@
                font-src 'self';
                connect-src 'self';
                manifest-src 'self';
-               form-action 'self' {{form_origin}}"
+               form-action 'self'"
     />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <meta property="og:title" content="{{title}}" />
     <meta property="og:description" content="{{description}}" />
@@ -36,12 +40,14 @@
     <meta name="twitter:image" content="{{site_url}}images/screenshot.png" />
 
     <link rel="canonical" href="{{permalink}}" />
-    <link rel="icon" href="{{site_path}}favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="{{site_path}}images/favicon.svg" />
-    <link rel="apple-touch-icon" href="{{site_path}}images/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Crypto Service RSS" href="/rss.xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="apple-touch-icon" href="/images/favicon.svg" />
+
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0d14" media="(prefers-color-scheme: dark)" />
 
     <script type="application/ld+json">
     {
@@ -49,17 +55,15 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "{{site_url}}#organization",
+          "@id": "https://crypto-service.co/#organization",
           "name": "Crypto Service",
-          "url": "{{site_url}}",
+          "url": "https://crypto-service.co/",
           "logo": {
             "@type": "ImageObject",
-            "url": "{{site_url}}assets/crypto-service-logo.svg"
+            "url": "https://crypto-service.co/assets/logo.svg"
           },
           "sameAs": [
-            "https://github.com/sebastienrousseau/crypto-service",
-            "https://x.com/sebastienrousseau",
-            "https://linkedin.com/company/sebastienrousseau"
+            "https://github.com/sebastienrousseau/crypto-service"
           ],
           "founder": {
             "@type": "Person",
@@ -69,48 +73,41 @@
         },
         {
           "@type": "SoftwareApplication",
-          "@id": "{{site_url}}#software",
+          "@id": "https://crypto-service.co/#software",
           "name": "Crypto Service Suite",
-          "applicationCategory": "SecurityApplication, DeveloperApplication, FinancialApplication",
-          "operatingSystem": "Node.js >= 22 (Linux, macOS, Windows); edge runtimes and browsers via crypto-edge",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Node.js 22 or later (Linux, macOS, Windows); edge runtimes and browsers through crypto-edge",
           "offers": {
             "@type": "Offer",
             "name": "Open source (Apache-2.0 OR MIT)",
             "price": "0",
             "priceCurrency": "USD"
           },
-          "description": "Modular Post-Quantum Crypto-as-a-Service (CaaS) operating core for tier-1 banks, custodians, and enterprise treasuries. FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module) across 18 lockstep packages.",
-          "softwareVersion": "0.0.24",
+          "description": "Open-source TypeScript cryptography toolkit in 18 npm packages that move in lockstep: FIPS 203 ML-KEM, FIPS 204 ML-DSA and FIPS 205 SLH-DSA algorithms (not a validated module), a self-hosted REST service, a KMS provider interface, database field encryption and CycloneDX CBOM generation, plus thin client SDKs for six other languages.",
+          "softwareVersion": "{{version}}",
+          "codeRepository": "https://github.com/sebastienrousseau/crypto-service",
           "license": [
             "https://spdx.org/licenses/Apache-2.0.html",
             "https://spdx.org/licenses/MIT.html"
           ],
           "featureList": [
-            "NIST FIPS 203 Post-Quantum Key Encapsulation (ML-KEM-512/768/1024)",
-            "NIST FIPS 204 Post-Quantum Digital Signatures (ML-DSA-44/65/87)",
-            "Hybrid X25519 + ML-KEM Key Encapsulation",
-            "Transparent Database Column Encryption for Prisma and TypeORM",
-            "KMS Provider Interface (AWS KMS and local providers implemented)",
-            "100% Test Coverage Floor"
+            "FIPS 203 ML-KEM-512/768/1024 key encapsulation (not a validated module)",
+            "FIPS 204 ML-DSA-44/65/87 and FIPS 205 SLH-DSA signatures (not a validated module)",
+            "Hybrid X25519 + ML-KEM key encapsulation through one v2 combiner",
+            "Composite ML-DSA hybrid signatures (draft-ietf-lamps-pq-composite-sigs)",
+            "X-Wing as the post-quantum HPKE KEM",
+            "Field encryption for Prisma and TypeORM",
+            "KMS provider interface: AWS KMS (including ML-DSA signing keys), Google Cloud KMS, HashiCorp Vault Transit and local providers; Azure Key Vault is a stub and PKCS#11 a software simulation",
+            "CycloneDX 1.6 and SPDX 3.0 CBOM generation",
+            "100% statement, branch, function and line coverage enforced in all 18 packages"
           ],
           "author": {
             "@type": "Person",
-            "name": "{{author}}",
+            "name": "Sebastien Rousseau",
             "url": "https://sebastienrousseau.com/"
           },
           "publisher": {
-            "@id": "{{site_url}}#organization"
-          }
-        },
-        {
-          "@type": "FinancialService",
-          "@id": "{{site_url}}#service",
-          "name": "Crypto Service Suite — Sovereign Cryptography as a Service",
-          "description": "Self-hosted post-quantum cryptography toolkit: FIPS 203/204 algorithm implementations (not a validated module), a KMS provider interface, database field encryption, and CycloneDX CBOM generation that can support DORA assessments.",
-          "url": "{{site_url}}",
-          "serviceType": "Cryptographic Infrastructure & Key Orchestration",
-          "provider": {
-            "@id": "{{site_url}}#organization"
+            "@id": "https://crypto-service.co/#organization"
           }
         },
         {
@@ -119,24 +116,33 @@
           "url": "{{permalink}}",
           "name": "{{title}}",
           "description": "{{description}}",
-          "inLanguage": "{{language}}"
+          "inLanguage": "{{language}}",
+          "isPartOf": { "@id": "https://crypto-service.co/#organization" }
         }
       ]
     }
     </script>
 
-    <link rel="stylesheet" href="{{site_path}}skeletonic.min.css" />
-    <link rel="stylesheet" href="{{site_path}}styles.css" />
-
-    <script src="{{site_path}}theme-init.js"></script>
+    <!-- PRISM, followed only by Crypto Service extensions. The interface
+         face is preloaded because it paints the first text. -->
+    <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/prism.css" />
+    <link rel="stylesheet" href="/css/crypto-service-prism.css" />
+    <script src="/js/prism-theme-init.js"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+
+  <body class="prism-theme">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     {{> header}}
-    <main id="main" role="main">
+
+    <main id="main-content">
       {{#block "main"}}{{/block}}
     </main>
+
     {{> footer}}
-    <script src="{{site_path}}main.js" defer></script>
+
+    <script src="/js/prism.js" defer></script>
+    <script src="/js/crypto-service-prism.js" defer></script>
   </body>
 </html>

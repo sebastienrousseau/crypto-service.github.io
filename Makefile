@@ -1,23 +1,23 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
-# Semantic Version: v0.0.24
-.PHONY: all build clean demo help
+.PHONY: all build audit serve clean help
 
 all: build
 
 help:
 	@echo "Available Makefile targets:"
-	@echo "  make build      - Compile static site using local SSG and sync to docs/"
-	@echo "  make clean      - Remove build artifacts and temporary files"
-	@echo "  make demo       - Render terminal animation demo with VHS"
+	@echo "  make build   - Build the site into site/ (./build.sh)"
+	@echo "  make audit   - Build, then run the ssg audit gates"
+	@echo "  make serve   - Build, then serve site/ on http://127.0.0.1:8099"
+	@echo "  make clean   - Remove build output"
 
 build:
-	@ssg build -f ssg.toml
-	@python3 scripts/post-build.py
+	./build.sh
+
+audit: build
+	ssg audit -f ssg.toml -o site --severity warn
+
+serve: build
+	cd site && python3 -m http.server 8099 --bind 127.0.0.1
 
 clean:
-	@rm -rf public docs dist .cache coverage *.log
-	@echo "Workspace cleaned."
-
-demo:
-	@export PATH="/Applications/Google Chrome.app/Contents/MacOS:$$PATH"; vhs .github/demo.tape
-
+	rm -rf .build site public
