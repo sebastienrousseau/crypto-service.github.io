@@ -22,3 +22,10 @@ output_dir = ".build/public"
 [agents]
 agents_txt = true
 ai_plugin = false
+
+# The markdownlint gate reads the pages as Markdown, but their bodies are
+# raw HTML, so it reports every absolute href="https://..." attribute as
+# a bare URL (MD034). Links are checked on the built HTML instead, by
+# the links gate and scripts/check_links.py.
+[audit.disabled]
+gates = ["markdownlint"]
