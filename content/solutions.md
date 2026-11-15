@@ -51,10 +51,10 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <div class="card card-quickstart">
 <div class="quickstart-header">
 <span class="quickstart-title">Developer Quick-Start Installation</span>
-<span class="quickstart-lang">npm (0.0.8 or later)</span>
+<span class="quickstart-lang">npm ({{version}} or later)</span>
 </div>
 <div class="hero-code-block">
-<pre><code><span class="hero-code-comment"># 1. Install (0.0.8 or later)</span>
+<pre><code><span class="hero-code-comment"># 1. Install ({{version}} or later)</span>
 <span class="hero-code-cmd">pnpm add</span> @sebastienrousseau/crypto-lib
 
 <span class="hero-code-comment">// 2. ML-KEM-768 key encapsulation (FIPS 203 algorithm)</span>
