@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 nav_overview: "Architecture"
@@ -55,7 +55,7 @@ When trading digital assets across global derivative and spot exchanges, holding
 </tr>
 <tr>
 <td><strong>Multi-Cloud Key Governance</strong></td>
-<td class="col-highlight"><span class="comp-badge-ok">KMS INTERFACE</span><br>AWS KMS implemented; GCP KMS, Azure Key Vault and HashiCorp Vault are stubs</td>
+<td class="col-highlight"><span class="comp-badge-ok">KMS INTERFACE</span><br>AWS KMS, Google Cloud KMS and HashiCorp Vault Transit implemented; Azure Key Vault is a stub</td>
 <td><span class="comp-badge-warn">PROPRIETARY ENCLAVES</span><br>Hosted optical HSM network within Copper infrastructure</td>
 </tr>
 <tr>
@@ -91,8 +91,8 @@ When trading digital assets across global derivative and spot exchanges, holding
 <h3>Cryptographic Boundary &amp; Quantum Hardening</h3>
 <ul class="comparison-detail-list">
 <li><strong>Post-Quantum Audit Trails:</strong> Every ClearLoop allocation order is signed internally with hybrid classical/ML-DSA schemes, preventing Harvest Now, Decrypt Later (HNDL) attacks.</li>
-<li><strong>No External Calls from crypto-lib:</strong> <code>@sebastienrousseau/crypto-lib</code> runs entirely in your process. <code>@sebastienrousseau/crypto-kms</code> calls AWS KMS only if you configure its AWS provider.</li>
-<li><strong>Coverage Gates:</strong> CI enforces 100% line and function coverage in every package (branch coverage 100% except crypto-lib at 99.5%). Coverage is not a correctness guarantee.</li>
+<li><strong>No External Calls from crypto-lib:</strong> <code>@sebastienrousseau/crypto-lib</code> runs entirely in your process. <code>@sebastienrousseau/crypto-kms</code> calls AWS KMS, Google Cloud KMS or Vault only if you configure that provider.</li>
+<li><strong>Coverage Gates:</strong> CI enforces 100% statement, branch, function and line coverage in all 18 packages. Coverage is not a correctness guarantee.</li>
 </ul>
 </div>
 </div>

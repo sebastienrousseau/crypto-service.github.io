@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -152,7 +152,7 @@ Legacy payment gateways verify the standard classical signature and safely ignor
 <section id="batch-verification" class="research-section">
 <h2>5. Verification Throughput &amp; Latency SLAs</h2>
 <p>
-Settlement engines must verify many signatures per second within tight SLAs, so verification cost matters. <code>@sebastienrousseau/crypto-lib</code> verifies ML-DSA signatures one at a time in JavaScript through <code>@noble/post-quantum</code>. It has no batch verification, no WebAssembly or SIMD acceleration, and no published latency figures; earlier figures in this section (a 4.2x SIMD speedup, 68.4 µs per signature) did not come from committed code and have been withdrawn.
+Settlement engines must verify many signatures per second within tight SLAs, so verification cost matters. <code>@sebastienrousseau/crypto-lib</code> verifies ML-DSA signatures one at a time, in JavaScript through <code>@noble/post-quantum</code> or through Node.js's native implementation on 24.7 and later. It has no batch verification, no WebAssembly or SIMD acceleration, and no published latency figures; earlier figures in this section (a 4.2x SIMD speedup, 68.4 µs per signature) did not come from committed code and have been withdrawn.
 </p>
 <p>
 Before committing to an SLA, benchmark verification on your target hardware (see <code>benchmarks/crypto-bench.ts</code> in the repository) and scale verification horizontally across processes or workers as needed.
@@ -213,7 +213,7 @@ Core banking architects must begin integrating post-quantum signature verificati
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>Post-Quantum Migration Architecture &amp; Interbank Settlement Rails</em>. Crypto Service Interbank Infrastructure Series. Reference: CSS-RAILS-2026-003. Canonical URI: https://docs.crypto-service.co/whitepapers/interbank-rails/
+Rousseau, S. (2026). <em>Post-Quantum Migration Architecture &amp; Interbank Settlement Rails</em>. Crypto Service Interbank Infrastructure Series. Reference: CSS-RAILS-2026-003. Canonical URI: <a href="https://crypto-service.co/whitepapers/interbank-rails/">https://crypto-service.co/whitepapers/interbank-rails/</a>
 </div>
 
 <div class="book-actions">

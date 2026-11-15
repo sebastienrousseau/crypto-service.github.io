@@ -1,14 +1,14 @@
 ---
 title: "Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets"
-description: "Authoritative threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial records, corporate secrets, and long-dated customer archives."
+description: "Threat intelligence white paper analyzing Harvest-Now-Decrypt-Later attacks against enterprise financial records, corporate secrets, and long-dated customer archives."
 eyebrow: "Threat Intelligence White Paper · HNDL"
 headline: "Harvest-Now-Decrypt-Later: Defending Long-Dated Enterprise Assets"
-lead: "An exhaustive architectural analysis detailing adversarial traffic interception, long-term cryptographic decay, and immediate hybrid post-quantum defenses."
+lead: "An architectural analysis detailing adversarial traffic interception, long-term cryptographic decay, and immediate hybrid post-quantum defenses."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -31,7 +31,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 The most dangerous vector in modern cyber warfare does not involve immediate ransomware deployment, unauthorized database exfiltration, or denial-of-service disruptions. It is entirely silent. Under the <strong>Harvest-Now-Decrypt-Later (HNDL)</strong> attack paradigm, adversary state actors and cyber syndicates are systematically intercepting and archiving petabytes of encrypted corporate traffic traversing public transit networks, cloud cross-connects, and undersea optical cables.
 </p>
 <p>
-Because financial transactions, sovereign debt portfolios, clinical healthcare data, and proprietary intellectual property possess legal and competitive lifespans exceeding 10 to 30 years, communications harvested today will remain catastrophic liabilities when early Cryptanalytically Relevant Quantum Computers (CRQCs) become operational. This technical paper models adversarial storage costs, quantum cryptanalytic timelines, and concrete mathematical engineering patterns to eliminate retroactive exposure today.
+Because financial transactions, sovereign debt portfolios, clinical healthcare data, and proprietary intellectual property possess legal and competitive lifespans exceeding 10 to 30 years, communications harvested today will remain catastrophic liabilities when early Cryptanalytically Relevant Quantum Computers (CRQCs) become operational. This technical paper models adversarial storage costs, quantum cryptanalytic timelines, and concrete mathematical engineering patterns to reduce retroactive exposure.
 </p>
 </div>
 
@@ -138,7 +138,7 @@ With approximately 4,000 logical qubits operating under fault-tolerant quantum e
 <section id="hybrid-encapsulation" class="research-section">
 <h2>4. Mathematical Architecture of Hybrid Dual-Key Encapsulation</h2>
 <p class="lead-text">
-To defeat HNDL attacks immediately without waiting for global classical deprecation, Crypto Service Suite implements a <strong>hybrid key encapsulation mechanism</strong> (X25519 + ML-KEM-768). Its combiner is specific to this library: it is neither the RFC 10024 TLS 1.3 key exchange nor X-Wing, so it does not interoperate with them. For TLS, use X25519MLKEM768 as specified in RFC 10024.
+To defeat HNDL attacks immediately without waiting for global classical deprecation, Crypto Service Suite implements a <strong>hybrid key encapsulation mechanism</strong> (X25519 + ML-KEM-768). Its v2 combiner is specific to this library (ADR 0004) and binds both ciphertexts and both public keys: it is neither the RFC 10024 TLS 1.3 key exchange nor X-Wing, so it does not interoperate with them. crypto-lib exports the RFC 10024 group names only as reference constants and does not implement them; for TLS, use a TLS stack that supports X25519MLKEM768. Where interoperability matters, crypto-lib's HPKE uses X-Wing (ADR 0002).
 </p>
 <p>
 The hybrid scheme executes two concurrent key encapsulations:
@@ -220,7 +220,7 @@ sent.mlKemCiphertext,
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets</em>. Crypto Service Threat Intelligence Series. Reference: CSS-THREAT-2026-002. Canonical URI: https://docs.crypto-service.co/whitepapers/hndl-threat-model/
+Rousseau, S. (2026). <em>Harvest-Now-Decrypt-Later (HNDL): Defending Long-Dated Enterprise Assets</em>. Crypto Service Threat Intelligence Series. Reference: CSS-THREAT-2026-002. Canonical URI: <a href="https://crypto-service.co/whitepapers/hndl-threat-model/">https://crypto-service.co/whitepapers/hndl-threat-model/</a>
 </div>
 
 <div class="book-actions">

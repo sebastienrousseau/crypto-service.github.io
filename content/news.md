@@ -84,7 +84,7 @@ Architectural briefs, threat model analyses, and technical white papers publishe
 <article class="book book-no-cover" id="sovereign-caas-paper">
 <div class="book-body">
 <p class="book-eyebrow">ARCHITECTURE BLUEPRINT · SOVEREIGN CAAS</p>
-<h4 class="book-title"><a href="/whitepapers/sovereign-caas/">Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions</a></h4>
+<h4 class="book-title"><a href="/whitepapers/sovereign-caas/">Sovereign CaaS: Reducing Custodial Counterparty Risk in Financial Institutions</a></h4>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Architecture Practice</p>
 <p class="book-meta book-meta-faint">English · Technical White Paper · FIPS 203/204 Algorithms</p>
 <p class="book-excerpt">How tier-1 banks, fintechs, and asset managers deploy on-premises and private-cloud Cryptography-as-a-Service daemons, retaining control of their keys, and how that supports EU DORA ICT risk work.</p>
@@ -101,7 +101,7 @@ Architectural briefs, threat model analyses, and technical white papers publishe
 <h4 class="book-title"><a href="/whitepapers/strategic-horizon-2027/">The 2027 Post-Quantum Strategic Horizon &amp; Cryptographic Audit</a></h4>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Cryptographic Research Directorate</p>
 <p class="book-meta book-meta-faint">English · Executive Treatise · 28 Pages · Regulatory Timelines &amp; Cryptanalysis</p>
-<p class="book-excerpt">An authoritative executive analysis of upcoming compliance milestones from NIST, ANSSI, BSI, and US NSA CNSA 2.0. Why waiting until 2029 introduces existential compliance risks for financial market infrastructures, the mathematical hardness of Module-LWE lattices, and concrete audit checklists.</p>
+<p class="book-excerpt">An executive analysis of upcoming compliance milestones from NIST, ANSSI, BSI, and US NSA CNSA 2.0. Why waiting until 2029 may raise compliance and migration risk for financial market infrastructures, the mathematical hardness of Module-LWE lattices, and concrete audit checklists.</p>
 <div class="book-actions">
 <a class="pill primary no-chev" href="/whitepapers/strategic-horizon-2027/">Read Strategic Treatise →</a>
 <a class="pill ghost no-chev" href="/research/">Academic Research</a>
@@ -115,7 +115,7 @@ Architectural briefs, threat model analyses, and technical white papers publishe
 <h4 class="book-title"><a href="/whitepapers/hndl-threat-model/">Harvest-Now-Decrypt-Later: Defending Long-Dated Enterprise Assets</a></h4>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Security Architecture Group</p>
 <p class="book-meta book-meta-faint">English · Threat Intelligence Brief · Threat Vectors &amp; Hybrid Mitigation</p>
-<p class="book-excerpt">State adversaries are actively intercepting and storing encrypted database backups, corporate IP, and interbank transaction logs. How hybrid dual-layer cryptography (X25519 + ML-KEM-768) neutralizes retroactive exposure today across enterprise asset lifespans spanning 10 to 30 years.</p>
+<p class="book-excerpt">State adversaries are actively intercepting and storing encrypted database backups, corporate IP, and interbank transaction logs. How hybrid dual-layer cryptography (X25519 + ML-KEM-768) reduces retroactive exposure for data protected from now on across enterprise asset lifespans spanning 10 to 30 years.</p>
 <div class="book-actions">
 <a class="pill primary no-chev" href="/whitepapers/hndl-threat-model/">Read Threat Report →</a>
 <a class="pill ghost no-chev" href="/research/#threat-model">Threat Matrix</a>

@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -160,7 +160,7 @@ There is no evidence bundle, key-rotation proof or auditor package. Treat the ou
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>CBOM Manual: Cryptographic Inventories for DORA Work</em>. Crypto Service Governance Series. Reference: CSS-COMP-2026-005. Canonical URI: https://docs.crypto-service.co/whitepapers/dora-cbom-manual/
+Rousseau, S. (2026). <em>CBOM Manual: Cryptographic Inventories for DORA Work</em>. Crypto Service Governance Series. Reference: CSS-COMP-2026-005. Canonical URI: <a href="https://crypto-service.co/whitepapers/dora-cbom-manual/">https://crypto-service.co/whitepapers/dora-cbom-manual/</a>
 </div>
 
 <div class="book-actions">

@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -20,7 +20,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 
 <div class="card institutional-highlight-card">
 <p class="institutional-highlight-text">
-<strong>Institutional Definition:</strong> <strong>Crypto Service Suite</strong> is an open-source, sovereign cryptographic operating core that executes NIST-standardized post-quantum key encapsulation (FIPS 203 ML-KEM), digital signatures (FIPS 204 ML-DSA), and a KMS interface (AWS KMS today) directly within an institution's private security perimeter—eliminating third-party counterparty risk, AUC basis-point fees, and vendor lock-in.
+<strong>Institutional Definition:</strong> <strong>Crypto Service Suite</strong> is an open-source, sovereign cryptographic operating core that executes NIST-standardized post-quantum key encapsulation (FIPS 203 ML-KEM), digital signatures (FIPS 204 ML-DSA), and a KMS interface (AWS KMS, Google Cloud KMS and HashiCorp Vault Transit providers) within an institution's own infrastructure, which reduces reliance on a third-party custodian at the cost of running the software yourself.
 </p>
 </div>
 
@@ -111,8 +111,8 @@ Unlike multi-tenant SaaS custodians that maintain operational control and charge
 <span class="solution-badge font-mono">FOR CFOs, TREASURERS &amp; CISOs</span>
 <h3>Balance-Sheet Risk &amp; Regulatory Sovereignty</h3>
 <ul class="comparison-detail-list">
-<li><strong>Zero Counterparty Insolvency:</strong> Private keys remain exclusively within your institutional boundary, eliminating catastrophic exchange/custodian freeze risks.</li>
-<li><strong>Predictable OpEx:</strong> Eliminates AUC basis-point taxes (saving $500k–$2.5M annually on $1B+ digital asset balances).</li>
+<li><strong>Counterparty Exposure:</strong> Keys stay on infrastructure the institution controls, so a third-party custodian's failure cannot freeze them. The institution carries the operational responsibility instead.</li>
+<li><strong>Cost Model:</strong> Open-source software has no assets-under-custody fee; the institution pays for its own infrastructure, operations and assurance work instead.</li>
 <li><strong>Cryptographic Inventory:</strong> CycloneDX 1.6 CBOM generation provides inventory input for EU DORA work. It does not by itself establish DORA or CNSA 2.0 compliance.</li>
 </ul>
 </div>
@@ -121,8 +121,8 @@ Unlike multi-tenant SaaS custodians that maintain operational control and charge
 <span class="solution-badge font-mono">FOR CHIEF ARCHITECTS &amp; LEAD ENGS</span>
 <h3>Small Dependency Tree &amp; Enforced Tests</h3>
 <ul class="comparison-detail-list">
-<li><strong>Small Dependency Tree:</strong> crypto-lib depends on the <code>@noble/*</code> libraries and OpenPGP.js (six runtime dependencies).</li>
-<li><strong>Coverage Gates:</strong> CI enforces 100% line and function coverage in every package, and 100% branch coverage in every package except crypto-lib (99.5%).</li>
+<li><strong>Small Dependency Tree:</strong> crypto-lib depends on the <code>@noble/*</code> libraries, OpenPGP.js and two helper packages (seven runtime dependencies).</li>
+<li><strong>Coverage Gates:</strong> CI enforces 100% statement, branch, function and line coverage in all 18 packages.</li>
 <li><strong>In-Process Execution:</strong> crypto-lib runs in your process with no network round trip. There is no WebAssembly acceleration and no published latency figures.</li>
 </ul>
 </div>
@@ -137,7 +137,7 @@ Unlike multi-tenant SaaS custodians that maintain operational control and charge
 <div class="card">
 <span class="solution-badge font-mono">VS / WITH BITGO</span>
 <h3><a href="bitgo/">Crypto Service vs. BitGo CaaS</a></h3>
-<p>Analyze how sovereign on-premises post-quantum cryptography eliminates basis-point asset fees and acts as an internal policy engine federating to BitGo qualified custody.</p>
+<p>How self-hosted post-quantum cryptography differs from a qualified custodian, and how the two can sit side by side.</p>
 <p><a href="bitgo/" class="btn btn-outline btn-sm">Read BitGo Comparison →</a></p>
 </div>
 
@@ -151,7 +151,7 @@ Unlike multi-tenant SaaS custodians that maintain operational control and charge
 <div class="card">
 <span class="solution-badge font-mono">VS / WITH FIREBLOCKS</span>
 <h3><a href="fireblocks/">Crypto Service vs. Fireblocks Treasury</a></h3>
-<p>Compare sovereign zero-trust key management with multi-party computation (MPC) co-signing dependencies, or deploy Crypto Service as a quantum-hardened enclave upstream of Fireblocks.</p>
+<p>Compare sovereign zero-trust key management with multi-party computation (MPC) co-signing dependencies, or run Crypto Service on premises upstream of Fireblocks for ML-DSA audit signatures.</p>
 <p><a href="fireblocks/" class="btn btn-outline btn-sm">Read Fireblocks Comparison →</a></p>
 </div>
 
@@ -173,7 +173,7 @@ Unlike multi-tenant SaaS custodians that maintain operational control and charge
 <div class="card">
 <h3>What is the difference between Crypto Service and hosted custodians like BitGo or Fireblocks?</h3>
 <p>
-Crypto Service Suite is an open-source, sovereign cryptographic software core that institutions deploy within their own infrastructure to eliminate third-party counterparty risk, AUC basis-point fees, and vendor lock-in. Hosted custodians provide managed SaaS services. Many institutions utilize Crypto Service Suite as an internal post-quantum policy engine operating upstream of their external custodial accounts.
+Crypto Service Suite is open-source cryptographic software that an institution runs on its own infrastructure, so no third party holds its keys and there is no assets-under-custody fee; in exchange, the institution operates and assures it. Hosted custodians provide a managed service. The two can be combined, with Crypto Service used internally upstream of a custodial account.
 </p>
 </div>
 
@@ -210,7 +210,7 @@ Crypto Service executes local confidential transactions, encrypts sensitive appl
       "name": "What is the difference between Crypto Service Suite and hosted custodians like BitGo and Fireblocks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Crypto Service Suite is an open-source, sovereign cryptographic software core that institutions deploy within their own infrastructure to eliminate third-party counterparty risk, AUC basis-point fees, and vendor lock-in. Hosted custodians like BitGo and Fireblocks provide managed multi-tenant SaaS services. Many institutions utilize Crypto Service Suite as an internal post-quantum policy engine operating upstream of their BitGo or Fireblocks accounts."
+        "text": "Crypto Service Suite is open-source cryptographic software that an institution runs on its own infrastructure, so no third party holds its keys and there is no assets-under-custody fee; in exchange, the institution operates and assures it. Hosted custodians like BitGo and Fireblocks provide managed multi-tenant services. The two can be combined, with Crypto Service used internally upstream of a BitGo or Fireblocks account."
       }
     },
     {

@@ -1,14 +1,14 @@
 ---
 title: "The 2027 Post-Quantum Strategic Horizon & Cryptographic Audit"
-description: "Authoritative executive treatise examining the 2027 post-quantum transition horizon, NIST FIPS 203/204/205 standards, US NSA CNSA 2.0 timelines, and institutional audit methodologies."
+description: "Executive paper examining the 2027 post-quantum transition horizon, NIST FIPS 203/204/205 standards, US NSA CNSA 2.0 timelines, and institutional audit methodologies."
 eyebrow: "Strategic Research Treatise · Global Horizons"
 headline: "The 2027 Post-Quantum Strategic Horizon & Cryptographic Audit"
-lead: "An exhaustive technical analysis of quantum cryptanalysis timelines, lattice-based algorithms, DORA ICT risk requirements, and sovereign cryptographic resilience."
+lead: "A technical analysis of quantum cryptanalysis timelines, lattice-based algorithms, DORA ICT risk requirements, and sovereign cryptographic resilience."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -31,7 +31,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 The global financial technology stack is confronting its most urgent cryptographic migration since the retirement of DES in the 1990s. With the official ratification of NIST FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA), post-quantum cryptography has transitioned from theoretical academic discourse into mandatory regulatory reality.
 </p>
 <p>
-This treatise provides an authoritative synthesis of the 2027 strategic horizon. It details why waiting until 2029 introduces existential compliance risks for financial market infrastructures, evaluates the mathematical foundations of Module-LWE and Module-SIS lattices, and presents an institutional cryptographic audit methodology designed to withstand regulatory scrutiny from central banks, the European Banking Authority, and sovereign intelligence oversight bodies.
+This paper summarises the 2027 strategic horizon. It details why waiting until 2029 may raise compliance and migration risk for financial market infrastructures, evaluates the mathematical foundations of Module-LWE and Module-SIS lattices, and presents an institutional cryptographic audit methodology designed to withstand regulatory scrutiny from central banks, the European Banking Authority, and sovereign intelligence oversight bodies.
 </p>
 </div>
 
@@ -202,7 +202,7 @@ The post-quantum transition is not a speculative IT maintenance project; it is a
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>The 2027 Post-Quantum Strategic Horizon &amp; Cryptographic Audit</em>. Crypto Service Cryptographic Research Directorate. Reference: CSS-RES-2026-001. Canonical URI: https://docs.crypto-service.co/whitepapers/strategic-horizon-2027/
+Rousseau, S. (2026). <em>The 2027 Post-Quantum Strategic Horizon &amp; Cryptographic Audit</em>. Crypto Service Cryptographic Research Directorate. Reference: CSS-RES-2026-001. Canonical URI: <a href="https://crypto-service.co/whitepapers/strategic-horizon-2027/">https://crypto-service.co/whitepapers/strategic-horizon-2027/</a>
 </div>
 
 <div class="book-actions">

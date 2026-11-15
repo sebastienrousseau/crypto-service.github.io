@@ -1,14 +1,14 @@
 ---
-title: "Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions"
+title: "Sovereign CaaS: Reducing Custodial Counterparty Risk in Financial Institutions"
 description: "Architecture white paper on running a self-hosted Cryptography-as-a-Service (CaaS) tier with crypto-server inside a private VPC, what the suite provides today, and how it fits EU DORA ICT risk work."
 eyebrow: "Architecture Blueprint · Sovereign CaaS"
-headline: "Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions"
+headline: "Sovereign CaaS: Reducing Custodial Counterparty Risk in Financial Institutions"
 lead: "An architecture pattern for running a self-hosted cryptography service inside private VPCs, with an honest account of what Crypto Service Suite provides today."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -80,11 +80,11 @@ A self-hosted service keeps key material on infrastructure the institution contr
 </div>
 <div class="card">
 <h3>2. Cryptographic Execution</h3>
-<p>crypto-lib in the same Node.js process: FIPS 203/204/205 algorithms via <code>@noble/post-quantum</code> (not a validated module, no constant-time guarantee) and AES-GCM or XChaCha20-Poly1305 via <code>@noble/ciphers</code>. There is no WebAssembly engine.</p>
+<p>crypto-lib in the same Node.js process: FIPS 203/204/205 algorithms via <code>@noble/post-quantum</code> or, on Node.js 24.7 and later, the runtime's native implementation (not a validated module, no constant-time guarantee) and AES-GCM or XChaCha20-Poly1305 via <code>@noble/ciphers</code>. There is no WebAssembly engine.</p>
 </div>
 <div class="card">
 <h3>3. Key Management</h3>
-<p>No HSM integration. crypto-kms offers AWS KMS and local in-memory providers; its GCP, Azure and Vault providers are stubs and its PKCS#11 provider is a software simulation for tests.</p>
+<p>No HSM integration. crypto-kms implements AWS KMS (including ML-DSA signing keys), Google Cloud KMS, HashiCorp Vault Transit and local in-memory providers; its Azure provider is a stub and its PKCS#11 provider is a software simulation for tests.</p>
 </div>
 <div class="card">
 <h3>4. Telemetry &amp; Inventory</h3>
@@ -101,7 +101,7 @@ A self-hosted service keeps key material on infrastructure the institution contr
 No throughput or latency figures are published for crypto-server yet. The table in earlier versions of this paper (104,200 ops/sec, 0.72 ms P99 signing, comparisons with cloud KMS and hardware HSMs) was not produced by committed benchmark code and has been withdrawn.
 </p>
 <p>
-To measure primitive latency on your own hardware, run <code>node benchmarks/crypto-bench.ts</code> from the repository after <code>pnpm -r run build</code>. Load-test the REST service in your target environment before sizing a deployment.
+To measure primitive latency on your own hardware, run <code>node --require ts-node/register/transpile-only benchmarks/crypto-bench.ts</code> from the repository after <code>pnpm -r run build</code>. Load-test the REST service in your target environment before sizing a deployment.
 </p>
 </section>
 
@@ -118,7 +118,7 @@ const kms = new AwsKmsProvider({ region: "eu-west-1" });
 const key = await kms.createKey("aes-256-gcm", "encrypt");
 const { plaintext, ciphertext } = await kms.generateDataKey(key.keyId);</code></pre>
 <p>
-AWS KMS and the local in-memory provider are implemented. The GCP, Azure and HashiCorp Vault providers reject every call with <code>Not implemented</code>.
+AWS KMS, Google Cloud KMS (REST API v1), HashiCorp Vault Transit and the local in-memory provider are implemented. The Azure Key Vault provider rejects every call with <code>NOT_IMPLEMENTED</code>, and the PKCS#11 provider is a software simulation that requires <code>simulate: true</code>.
 </p>
 </section>
 
@@ -164,7 +164,7 @@ If you deploy crypto-server, we suggest:
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions</em>. Crypto Service Architecture Blueprints. Reference Code: CSS-ARCH-2026-004. Canonical URI: https://docs.crypto-service.co/whitepapers/sovereign-caas/
+Rousseau, S. (2026). <em>Sovereign CaaS: Reducing Custodial Counterparty Risk in Financial Institutions</em>. Crypto Service Architecture Blueprints. Reference Code: CSS-ARCH-2026-004. Canonical URI: <a href="https://crypto-service.co/whitepapers/sovereign-caas/">https://crypto-service.co/whitepapers/sovereign-caas/</a>
 </div>
 
 <div class="book-actions">

@@ -1,14 +1,14 @@
 ---
 title: "2027 Post-Quantum Strategic Horizon & Cryptographic Audit"
-description: "Authoritative research white paper examining the 2027 post-quantum transition horizon, Harvest Now Decrypt Later (HNDL) threats, lattice-based cryptography benchmarks, and architectural defense."
+description: "Research white paper examining the 2027 post-quantum transition horizon, Harvest Now Decrypt Later (HNDL) threats, lattice-based cryptography benchmarks, and architectural defense."
 eyebrow: "White Paper // Academic & Strategic Research"
 headline: "The 2027 Post-Quantum Cryptographic Horizon for Modern Enterprise Stacks"
-lead: "An exhaustive technical white paper analyzing quantum cryptanalysis timelines, lattice-based algorithms, DORA ICT risk requirements, and sovereign cryptographic resilience."
+lead: "A technical paper on quantum cryptanalysis timelines, lattice-based algorithms, DORA ICT risk requirements and post-quantum migration planning, with the limits of what Crypto Service implements."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -33,7 +33,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <section id="executive-synthesis" class="research-section">
 <h2>1. Executive Synthesis &amp; The 2027 Threat Landscape</h2>
 <p class="lead-text">
-The global technological architecture is undergoing its most profound cryptographic restructuring in half a century. The mathematical assumptions underpinning modern security—namely, the intractability of integer factorization (RSA) and discrete logarithms over elliptic curves (ECDSA, Ed25519)—will be decisively compromised by Cryptanalytically Relevant Quantum Computers (CRQCs) running Shor's algorithm.
+The move to post-quantum cryptography is the largest change to deployed public-key cryptography in decades. The mathematical assumptions underpinning modern security—namely, the intractability of integer factorization (RSA) and discrete logarithms over elliptic curves (ECDSA, Ed25519)—would be broken by a Cryptanalytically Relevant Quantum Computer (CRQC) running Shor's algorithm.
 </p>
 <p>
 While fault-tolerant quantum computers capable of breaking RSA-2048 in polynomial time remain a multi-year engineering challenge, the <em>security threshold for long-lived sensitive communications has already expired</em>. Financial contracts, corporate IP, sensitive customer records, and regulatory archives carry legal lifespans ranging from 10 to 30 years. Any encrypted message transmitted over public networks today is subject to exfiltration and archival.
@@ -91,7 +91,7 @@ NIST's standardized post-quantum algorithms (FIPS 203, FIPS 204, and FIPS 205) a
 <section id="benchmarks" class="research-section">
 <h2>4. Sizes and Benchmarks</h2>
 <p class="lead-text">
-The main cost of moving to lattice-based algorithms is size: ML-KEM ciphertexts and ML-DSA signatures are much larger than their elliptic-curve counterparts. The sizes below are fixed by the standards. Timing figures previously shown here did not come from committed benchmark code and have been withdrawn; run <code>node benchmarks/crypto-bench.ts</code> from the repository to measure on your own hardware.
+The main cost of moving to lattice-based algorithms is size: ML-KEM ciphertexts and ML-DSA signatures are much larger than their elliptic-curve counterparts. The sizes below are fixed by the standards. Timing figures previously shown here did not come from committed benchmark code and have been withdrawn; run <code>node --require ts-node/register/transpile-only benchmarks/crypto-bench.ts</code> from the repository to measure on your own hardware.
 </p>
 
 <div class="table-responsive">
@@ -181,12 +181,12 @@ Institutions must execute a structured, multi-phase migration to avoid operation
 </div>
 <div class="timeline-item">
 <span class="timeline-badge font-mono">PHASE 2 // 2026</span>
-<h3>Dual-Key Hybrid Enclaves &amp; Gateway Upgrades</h3>
-<p>Deploy RFC 10024 hybrid key encapsulation (X25519 + ML-KEM-768) alongside existing TLS 1.3 infrastructure. Manage key-encryption keys through a KMS (crypto-kms implements AWS KMS today).</p>
+<h3>Hybrid Key Establishment &amp; Gateway Upgrades</h3>
+<p>Enable hybrid X25519 + ML-KEM-768 key exchange in TLS 1.3 where your TLS stack supports it (the X25519MLKEM768 group in RFC 10024). crypto-lib does not implement those TLS groups: it exports their names and codepoints as reference constants only, and its own hybrid KEMs use a different combiner that does not interoperate with them. Manage key-encryption keys through a KMS; crypto-kms implements AWS KMS, Google Cloud KMS and HashiCorp Vault Transit providers.</p>
 </div>
 <div class="timeline-item">
 <span class="timeline-badge font-mono">PHASE 3 // 2027</span>
-<h3>Pure Post-Quantum Consensus &amp; CNSA 2.0 Compliance</h3>
+<h3>Pure Post-Quantum Algorithms &amp; CNSA 2.0 Timelines</h3>
 <p>Transition high-value communication and data-at-rest stores to pure FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) primitives ahead of CNSA 2.0 enforcement deadlines.</p>
 </div>
 </div>
@@ -201,7 +201,7 @@ Interbank settlement, payment messaging networks, and digital asset custody rail
 <div class="grid-2x2">
 <div class="card">
 <h3>Transport Layer Security (TLS 1.3)</h3>
-<p>Deploy hybrid key encapsulation (X25519 + ML-KEM-768) within interbank gateways. The session key stays secure as long as either component remains unbroken.</p>
+<p>Use hybrid key exchange (X25519 + ML-KEM-768) in interbank gateways through a TLS stack that implements it; crypto-lib is not a TLS library. A hybrid is designed so the session key stays secure while either component remains unbroken.</p>
 </div>
 <div class="card">
 <h3>Data-at-Rest &amp; Field Encryption</h3>
@@ -209,16 +209,16 @@ Interbank settlement, payment messaging networks, and digital asset custody rail
 </div>
 <div class="card">
 <h3>Transaction Signing &amp; Non-Repudiation</h3>
-<p>High-value transaction payloads are signed using ML-DSA-65 (FIPS 204), delivering post-quantum non-repudiation and deterministic verification across wholesale banking rails.</p>
+<p>Transaction payloads can be signed with ML-DSA-65 (FIPS 204), or with a Composite ML-DSA hybrid in which neither the ML-DSA nor the Ed25519 half verifies on its own.</p>
 </div>
 <div class="card">
 <h3>Key Management</h3>
-<p><code>@sebastienrousseau/crypto-kms</code> offers one interface for key management backends. AWS KMS is implemented; GCP, Azure and Vault providers are stubs, and there is no HSM or PKCS#11 integration.</p>
+<p><code>@sebastienrousseau/crypto-kms</code> offers one interface for key management backends. AWS KMS (including ML-DSA signing keys), Google Cloud KMS, HashiCorp Vault Transit and a local provider are implemented; Azure Key Vault is a stub, and the PKCS#11 provider is a software simulation with no HSM.</p>
 </div>
 </div>
 
 <div class="hero-cta-group hero-cta-spaced">
-<a class="btn btn-swift-mint btn-lg" href="/contact/">Schedule an Institutional Architecture Briefing →</a>
+<a class="btn btn-swift-mint btn-lg" href="/contact/">Contact the project →</a>
 <a class="btn btn-secondary btn-lg" href="/solutions/">Explore Platform Solutions →</a>
 </div>
 </section>

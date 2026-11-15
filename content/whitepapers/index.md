@@ -1,6 +1,6 @@
 ---
 title: "Institutional White Papers & Technical Publications — Crypto Service"
-description: "Authoritative white papers, cryptographic research publications, and banking infrastructure architectural briefs published by Sebastien Rousseau and the Crypto Service team."
+description: "White papers, cryptographic research publications, and banking infrastructure architectural briefs published by Sebastien Rousseau and the Crypto Service team."
 eyebrow: "Research & Publications"
 headline: "Institutional White Papers & Technical Analysis"
 lead: "Industry white papers, mathematical proofs, and applied cryptographic research for senior payments and security leaders."
@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -35,10 +35,10 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <article class="book book-no-cover" id="sovereign-caas">
 <div class="book-body">
 <p class="book-eyebrow">ARCHITECTURE BLUEPRINT · SOVEREIGN CAAS</p>
-<h2 class="book-title"><a href="/whitepapers/sovereign-caas/">Sovereign CaaS: Eliminating Custodial Counterparty Risk in Financial Institutions</a></h2>
+<h2 class="book-title"><a href="/whitepapers/sovereign-caas/">Sovereign CaaS: Reducing Custodial Counterparty Risk in Financial Institutions</a></h2>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Crypto Service Engineering Group</p>
 <p class="book-meta book-meta-faint">English · Technical White Paper · FIPS 203/204 Algorithms · Architecture Pattern</p>
-<p class="book-excerpt">How banks, custodians, and asset managers can run a self-hosted Cryptography-as-a-Service tier with crypto-server inside a private VPC, keeping key custody in-house. States what the suite provides today (a Fastify REST service, AWS KMS integration, CBOM output) and what it does not (HSM integration, published throughput figures, a DORA compliance verdict).</p>
+<p class="book-excerpt">How banks, custodians, and asset managers can run a self-hosted Cryptography-as-a-Service tier with crypto-server inside a private VPC, keeping key custody in-house. States what the suite provides today (a Fastify REST service, AWS, Google Cloud and Vault KMS providers, CBOM output) and what it does not (HSM integration, published throughput figures, a DORA compliance verdict).</p>
 <p class="book-actions">
 <a class="pill primary no-chev" href="/whitepapers/sovereign-caas/" title="Read the architecture white paper">Read Architecture Blueprint →</a>
 <a class="pill ghost no-chev" href="/solutions/#caas-server" title="Explore CaaS Daemon Microservice">CaaS Server Specs</a>
@@ -52,7 +52,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <h2 class="book-title"><a href="/whitepapers/strategic-horizon-2027/">The 2027 Post-Quantum Strategic Horizon &amp; Cryptographic Audit</a></h2>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Cryptographic Research Directorate</p>
 <p class="book-meta book-meta-faint">English · Executive Treatise · 28 Pages · Regulatory Timelines &amp; Cryptanalysis</p>
-<p class="book-excerpt">An authoritative executive analysis of upcoming compliance mandates from NIST, ANSSI, BSI, and the US NSA CNSA 2.0 directive. Analyzes why waiting until 2029 introduces existential compliance risks for financial market infrastructures, the mathematical hardness reductions of Module-LWE and Module-SIS lattices, and the concrete implementation steps required to pass institutional resilience audits.</p>
+<p class="book-excerpt">An executive analysis of upcoming compliance mandates from NIST, ANSSI, BSI, and the US NSA CNSA 2.0 directive. Analyzes why waiting until 2029 may raise compliance and migration risk for financial market infrastructures, the mathematical hardness reductions of Module-LWE and Module-SIS lattices, and the concrete implementation steps required to pass institutional resilience audits.</p>
 <p class="book-actions">
 <a class="pill primary no-chev" href="/whitepapers/strategic-horizon-2027/" title="Read the strategic treatise">Read Strategic Treatise →</a>
 <a class="pill ghost no-chev" href="/research/" title="Visit Academic Research Portal">Research Portal</a>
@@ -66,7 +66,7 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <h2 class="book-title"><a href="/whitepapers/hndl-threat-model/">Harvest-Now-Decrypt-Later: Defending Long-Dated Enterprise Assets</a></h2>
 <p class="book-meta"><time datetime="2026-09-28">September 2026</time> · Sebastien Rousseau · Security Architecture Group</p>
 <p class="book-meta book-meta-faint">English · Threat Intelligence Brief · Threat Vectors &amp; Hybrid Mitigation</p>
-<p class="book-excerpt">Adversary intelligence services and state actors are actively exfiltrating and archiving encrypted interbank traffic, corporate secrets, and long-term customer records today. Because financial contracts carry legal and operational lifespans of 10 to 30 years, data exfiltrated today will be decrypted by early cryptanalytically relevant quantum computers. This paper details hybrid dual-layer key encapsulation (X25519 + ML-KEM-768) that neutralizes retroactive exposure immediately.</p>
+<p class="book-excerpt">Adversary intelligence services and state actors are actively exfiltrating and archiving encrypted interbank traffic, corporate secrets, and long-term customer records today. Because financial contracts carry legal and operational lifespans of 10 to 30 years, data exfiltrated today will be decrypted by early cryptanalytically relevant quantum computers. This paper details hybrid dual-layer key encapsulation (X25519 + ML-KEM-768) that reduces retroactive exposure for data protected from now on.</p>
 <p class="book-actions">
 <a class="pill primary no-chev" href="/whitepapers/hndl-threat-model/" title="Read the threat model white paper">Read Threat Model Report →</a>
 <a class="pill ghost no-chev" href="/research/#threat-model" title="Inspect Threat Models">Threat Matrices</a>
@@ -167,9 +167,9 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 </details>
 
 <details class="qa-item">
-<summary class="qa-q">Can an institution commission bespoke architectural briefings or speaking sessions?</summary>
+<summary class="qa-q">Can an institution commission briefings or support?</summary>
 <section class="qa-a">
-<p>Yes, subject to availability. Senior institutional briefings focus on wholesale payments quantum transition, ISO 20022 message payload security, DORA ICT risk readiness, and sovereign CaaS deployment architectures. Use the <a href="/contact/">contact form</a> to submit your institutional brief, committee requirements, and scheduling window.</p>
+<p>No. The project has no paid support, consulting or briefing offer. Questions and proposals go through GitHub; see the <a href="/contact/">contact page</a>.</p>
 </section>
 </details>
 

@@ -1,17 +1,17 @@
 ---
 form_origin: "https://docs.crypto-service.co"
 layout: index
-title: "Crypto Service Suite — Post-Quantum Cryptographic Infrastructure for Modern Enterprise"
-description: "Self-hostable, open-source cryptography toolkit for fintechs, banks, and enterprise engineering teams: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (via @noble/post-quantum; not a validated cryptographic module), a KMS interface, database field encryption, and CycloneDX CBOM generation across 18 lockstep packages."
-eyebrow: "Post-Quantum Cryptographic Architecture · FIPS 203/204"
+title: "Crypto Service Suite — Open-Source Post-Quantum Cryptography Toolkit"
+description: "Self-hostable, open-source post-quantum cryptography toolkit: 18 TypeScript npm packages with FIPS 203/204/205 algorithms (not a validated module), a REST service, KMS, field encryption and CBOMs."
+eyebrow: "Open-source post-quantum cryptography · FIPS 203/204/205 algorithms"
 author: "Sebastien Rousseau"
 name: "Crypto Service"
-headline: "Post-Quantum Cryptographic Infrastructure for Modern Enterprise Stacks"
-lead: "An open-source cryptography toolkit for fintechs, banks, and enterprise engineering teams. Post-quantum encryption and signatures, a KMS interface (AWS and local providers), database field encryption, and CycloneDX CBOM generation across 18 modular TypeScript packages."
+headline: "Post-quantum cryptography you run yourself."
+lead: "An open-source TypeScript toolkit for banks, fintechs and engineering teams: post-quantum encryption and signatures, a self-hosted REST service with six language SDKs, a KMS interface (AWS KMS, Google Cloud KMS, Vault Transit), database field encryption and CycloneDX CBOMs, in 18 npm packages that share one version. Not a validated cryptographic module."
 language: en-GB
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
-date: "2026-09-28"
+date: "2026-11-15"
 label_theme: "Theme"
 label_theme_system: "System"
 label_theme_light: "Light"
@@ -24,7 +24,7 @@ label_github: "View Crypto Service on GitHub"
 nav_overview: "Architecture"
 nav_security: "Security"
 nav_faq: "FAQ"
-cta_primary: "Explore 18 Packages"
+cta_primary: "Explore the 18 npm packages"
 ---
 
 <!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->

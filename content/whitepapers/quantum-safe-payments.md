@@ -1,6 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
-description: "Authoritative industry white paper produced for the Emerging Payments Association Asia (EPAA) by Sebastien Rousseau, analyzing the quantum threat to wholesale payment rails, SWIFT, RTGS, and instant payments."
+description: "Industry white paper produced for the Emerging Payments Association Asia (EPAA) by Sebastien Rousseau, analyzing the quantum threat to wholesale payment rails, SWIFT, RTGS, and instant payments."
 eyebrow: "Industry White Paper · EPAA"
 headline: "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
 lead: "A structural analysis of the threat cryptographically-relevant quantum computers pose to payment infrastructure across SWIFT, real-time gross settlement (RTGS) rails, and instant payments schemes."
@@ -95,7 +95,7 @@ To understand the blast radius of quantum cryptanalysis on payments, we must dif
 <td>XML-DSig (ECDSA P-256)</td>
 <td>Shor's Algorithm (Discrete Log)</td>
 <td>Retroactive signature forgery; payload alteration</td>
-<td>Hybrid X25519 + ML-KEM-768 Enveloping</td>
+<td>FIPS 204 ML-DSA or composite ML-DSA + classical signatures</td>
 </tr>
 <tr>
 <td><strong>Domestic RTGS Schemes</strong></td>
@@ -109,7 +109,7 @@ To understand the blast radius of quantum cryptanalysis on payments, we must dif
 <td>ECDHE (X25519 / secp256r1)</td>
 <td>Passive harvest-now-decrypt-later</td>
 <td>Historical packet decryption; credential leak</td>
-<td>RFC 10024 Hybrid KEM (X25519 + ML-KEM)</td>
+<td>Hybrid TLS 1.3 key exchange (X25519MLKEM768, RFC 10024) in the TLS stack</td>
 </tr>
 </tbody>
 </table>
@@ -127,7 +127,7 @@ The most urgent misconception in financial risk management is that quantum compu
 <p><strong>Harvest Now, Decrypt Later (HNDL)</strong> represents a present-day intelligence operation whereby adversary state actors systematically record and archive encrypted wholesale payment communications crossing international fiber optics. When a CRQC becomes operational, all archived historical session keys will be derived, exposing sovereign debt positions, corporate trade secrets, foreign exchange interventions, and beneficial ownership structures.</p>
 </blockquote>
 <p>
-Under international financial regulations (including Basel III records retention rules and EU DORA Article 13), banks must maintain audit trails and non-repudiable settlement records for up to 30 years. Any payment transaction encrypted under classical RSA or ECC today is mathematically guaranteed to become plaintext within the legal lifespan of the contract.
+Under international financial regulations (including Basel III records retention rules and EU DORA Article 13), banks must maintain audit trails and non-repudiable settlement records for up to 30 years. Any payment transaction encrypted under classical RSA or ECC today could become readable within the legal lifespan of the contract if a cryptographically relevant quantum computer is built in that time.
 </p>
 </section>
 
@@ -162,7 +162,7 @@ While post-quantum lattice algorithms execute with remarkable computational spee
 In high-throughput core banking rails where thousands of messages are processed per second, unconsidered signature concatenation will violate network packet MTU limits (1,500 bytes on standard Ethernet) and trigger IP fragmentation.
 </p>
 <p>
-Crypto Service Suite resolves this structural barrier by implementing an authenticated envelope encryption pattern: rather than attaching post-quantum signatures to every micro-transaction, session-level hybrid ML-KEM-768 key encapsulation authenticates the high-speed channel, while ISO 20022 message blocks (`pacs.008.001.10`) carry constant-time symmetric AEAD tokens (AES-256-GCM) with periodic lattice batch verification.
+One way to limit the overhead is to establish a session key with hybrid ML-KEM-768 key encapsulation and protect individual messages with a symmetric AEAD such as AES-256-GCM, reserving post-quantum signatures for where non-repudiation is required. Crypto Service does not ship this as a payment-rail product; crypto-lib provides the primitives, and its ISO 20022 module signs a message with both Ed25519 and ML-DSA.
 </p>
 </section>
 
@@ -172,7 +172,7 @@ Crypto Service Suite resolves this structural barrier by implementing an authent
 <h2>6. Actionable Five-Stage Institutional Migration Blueprint</h2>
 <ol>
 <li><strong>Phase 1: Cryptographic Asset Discovery (Q1–Q2 2025)</strong> — Generate continuous Cryptographic Bills of Materials (CBOM) across all payment microservices, API gateways, database schemas, and HSM partitions to catalog every classical curve and key length.</li>
-<li><strong>Phase 2: Hybrid Dual-Layer Encapsulation (Q3 2025–Q1 2026)</strong> — Deploy dual-key hybrid schemes (RFC 10024 combining classical X25519 with FIPS 203 ML-KEM-768). If either algorithm fails, security remains intact.</li>
+<li><strong>Phase 2: Hybrid Dual-Layer Encapsulation (Q3 2025–Q1 2026)</strong> — Deploy hybrid key establishment combining classical X25519 with FIPS 203 ML-KEM-768, for example the RFC 10024 X25519MLKEM768 group in TLS stacks that support it. A hybrid is designed to stay secure while either algorithm holds. (Crypto Service's crypto-lib does not implement the RFC 10024 TLS groups; it exports their names as reference constants only.)</li>
 <li><strong>Phase 3: Hardware Security Module (HSM) Firmware Upgrades (Q2–Q4 2026)</strong> — Transition core cryptographic root custody to FIPS 140-3 validated HSM hardware supporting native lattice key generation.</li>
 <li><strong>Phase 4: Message Format &amp; Scheme Standardization (Q1–Q4 2027)</strong> — Coordinate with SWIFT, RTGS operators, and central bank clearing authorities to validate post-quantum signature fields in ISO 20022 syntax.</li>
 <li><strong>Phase 5: Classical Cryptographic Deprecation (2028–2029)</strong> — Enforce zero-tolerance deprecation of standalone RSA-2048 and ECDSA signatures across all external banking counterparty interfaces.</li>
@@ -194,7 +194,7 @@ Financial market authorities and scheme owners must establish mandatory transiti
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2025). <em>Quantum-Safe Payments: Why the Payments Industry Must Act Now</em>. Emerging Payments Association Asia (EPAA) Quantum-Safe Cryptography Working Group. Canonical Document URI: https://docs.crypto-service.co/whitepapers/quantum-safe-payments/
+Rousseau, S. (2025). <em>Quantum-Safe Payments: Why the Payments Industry Must Act Now</em>. Emerging Payments Association Asia (EPAA) Quantum-Safe Cryptography Working Group. Canonical Document URI: <a href="https://crypto-service.co/whitepapers/quantum-safe-payments/">https://crypto-service.co/whitepapers/quantum-safe-payments/</a>
 </div>
 
 <div class="book-actions">

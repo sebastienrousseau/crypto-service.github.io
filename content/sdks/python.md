@@ -20,6 +20,7 @@ date: "2026-11-15"
 <h2 id="install">Install</h2>
 <p>Package: <code>crypto-service-sdk</code> on <a href="https://pypi.org/project/crypto-service-sdk/">PyPI</a>.</p>
 <pre><code>pip install crypto-service-sdk=={{version}}</code></pre>
+<p><strong>Check before installing.</strong> On 15 November 2026 the PyPI name <code>crypto-service-sdk</code> was held by an unrelated project (version 1.0.0, not published by this project). Install only a release whose PyPI project links point to <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python">sebastienrousseau/crypto-service-sdk-python</a>, and pin the version as above. <!-- history --></p>
 
 <h2 id="usage">Usage</h2>
 <p>This site does not reproduce the SDK's API. For client construction, authentication and the available calls, <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python#readme">see the SDK README</a>; for the endpoints themselves, see crypto-server's OpenAPI document, which the server publishes at <code>/docs</code> unless <code>DOCS_ENABLED=0</code>.</p>
