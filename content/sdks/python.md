@@ -1,9 +1,9 @@
 ---
 title: "Python SDK for crypto-server — Crypto Service Suite"
-description: "The Crypto Service Python SDK: a thin async-first client for the crypto-server REST API, published as crypto-service (PyPI). Install command and links."
+description: "The Crypto Service Python SDK: a thin async-first client for the crypto-server REST API, published as crypto-service-sdk-python (PyPI). Install command and links."
 eyebrow: "Language SDKs · Python"
 headline: "The Python SDK"
-lead: "A thin async-first Python client for the crypto-server REST API, published as crypto-service."
+lead: "A thin async-first Python client for the crypto-server REST API, published as crypto-service-sdk-python."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
@@ -18,8 +18,8 @@ date: "2026-11-15"
 <p>All six language SDKs were first released with suite version 0.0.40 and follow the suite version. They are separate from the 18 TypeScript npm packages; in TypeScript, use <a href="/ecosystem/#crypto-sdk">@sebastienrousseau/crypto-sdk</a> instead.</p>
 
 <h2 id="install">Install</h2>
-<p>Package: <code>crypto-service</code> on <a href="https://pypi.org/project/crypto-service/">PyPI</a>.</p>
-<pre><code>pip install crypto-service=={{version}}</code></pre>
+<p>Package: <code>crypto-service-sdk-python</code> on <a href="https://pypi.org/project/crypto-service-sdk-python/">PyPI</a>.</p>
+<pre><code>pip install crypto-service-sdk-python=={{version}}</code></pre>
 
 <p>The import name is <code>crypto_service</code>.</p>
 
@@ -29,6 +29,6 @@ date: "2026-11-15"
 <h2 id="links">Links</h2>
 <ul>
 <li>Source and README: <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python">github.com/sebastienrousseau/crypto-service-sdk-python</a></li>
-<li>Registry: <a href="https://pypi.org/project/crypto-service/">PyPI</a></li>
+<li>Registry: <a href="https://pypi.org/project/crypto-service-sdk-python/">PyPI</a></li>
 <li><a href="/sdks/">All language SDKs</a></li>
 </ul>

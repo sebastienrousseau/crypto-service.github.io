@@ -24,7 +24,7 @@ date: "2026-11-15"
 <tr><th scope="row"><a href="/sdks/go/">Go</a></th><td><code>github.com/sebastienrousseau/crypto-service-sdk-go</code></td><td>Go module proxy</td></tr>
 <tr><th scope="row"><a href="/sdks/cpp/">C++</a></th><td><code>crypto_service_sdk</code></td><td>GitHub release (CMake package)</td></tr>
 <tr><th scope="row"><a href="/sdks/dotnet/">.NET</a></th><td><code>CryptoService.Sdk</code></td><td>NuGet</td></tr>
-<tr><th scope="row"><a href="/sdks/python/">Python</a></th><td><code>crypto-service</code></td><td>PyPI</td></tr>
+<tr><th scope="row"><a href="/sdks/python/">Python</a></th><td><code>crypto-service-sdk-python</code></td><td>PyPI</td></tr>
 </tbody>
 </table>
 </div>
