@@ -1,9 +1,9 @@
 ---
 title: "Python SDK for crypto-server — Crypto Service Suite"
-description: "The Crypto Service Python SDK: a thin async-first client for the crypto-server REST API, published as crypto-service-sdk (PyPI). Install command and links."
+description: "The Crypto Service Python SDK: a thin async-first client for the crypto-server REST API, published as crypto-service (PyPI). Install command and links."
 eyebrow: "Language SDKs · Python"
 headline: "The Python SDK"
-lead: "A thin async-first Python client for the crypto-server REST API, published as crypto-service-sdk."
+lead: "A thin async-first Python client for the crypto-server REST API, published as crypto-service."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
@@ -18,9 +18,10 @@ date: "2026-11-15"
 <p>All six language SDKs were first released with suite version 0.0.40 and follow the suite version. They are separate from the 18 TypeScript npm packages; in TypeScript, use <a href="/ecosystem/#crypto-sdk">@sebastienrousseau/crypto-sdk</a> instead.</p>
 
 <h2 id="install">Install</h2>
-<p>Package: <code>crypto-service-sdk</code> on <a href="https://pypi.org/project/crypto-service-sdk/">PyPI</a>.</p>
-<pre><code>pip install crypto-service-sdk=={{version}}</code></pre>
-<p><strong>Check before installing.</strong> On 15 November 2026 the PyPI name <code>crypto-service-sdk</code> was held by an unrelated project (version 1.0.0, not published by this project). Install only a release whose PyPI project links point to <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python">sebastienrousseau/crypto-service-sdk-python</a>, and pin the version as above. <!-- history --></p>
+<p>Package: <code>crypto-service</code> on <a href="https://pypi.org/project/crypto-service/">PyPI</a>.</p>
+<pre><code>pip install crypto-service=={{version}}</code></pre>
+
+<p>The import name is <code>crypto_service</code>.</p>
 
 <h2 id="usage">Usage</h2>
 <p>This site does not reproduce the SDK's API. For client construction, authentication and the available calls, <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python#readme">see the SDK README</a>; for the endpoints themselves, see crypto-server's OpenAPI document, which the server publishes at <code>/docs</code> unless <code>DOCS_ENABLED=0</code>.</p>
@@ -28,6 +29,6 @@ date: "2026-11-15"
 <h2 id="links">Links</h2>
 <ul>
 <li>Source and README: <a href="https://github.com/sebastienrousseau/crypto-service-sdk-python">github.com/sebastienrousseau/crypto-service-sdk-python</a></li>
-<li>Registry: <a href="https://pypi.org/project/crypto-service-sdk/">PyPI</a></li>
+<li>Registry: <a href="https://pypi.org/project/crypto-service/">PyPI</a></li>
 <li><a href="/sdks/">All language SDKs</a></li>
 </ul>
