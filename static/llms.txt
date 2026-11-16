@@ -1,0 +1,35 @@
+# Crypto Service Suite
+
+> Open-source, self-hosted post-quantum cryptography toolkit for banks, fintechs and engineering teams: 18 TypeScript npm packages released at one shared version, plus six thin language SDKs for its REST service. Implements the NIST FIPS 203 (ML-KEM), FIPS 204 (ML-DSA) and FIPS 205 (SLH-DSA) algorithms; it is not a validated cryptographic module and has no FIPS 140-3 certificate.
+
+## What it provides
+
+- **Post-quantum algorithms**: ML-KEM-512/768/1024, ML-DSA-44/65/87 and SLH-DSA through `@noble/post-quantum`, or Node.js's native implementation on 24.7 and later. NIST ACVP known-answer tests run in CI. No constant-time guarantee.
+- **Hybrid constructions**: X25519 (or P-256, X448) + ML-KEM key encapsulation through one v2 combiner; Composite ML-DSA hybrid signatures (draft-ietf-lamps-pq-composite-sigs); RFC 9180 HPKE with X-Wing as its post-quantum KEM. The RFC 10024 TLS groups are exported as reference constants only and are not implemented.
+- **Self-hosted REST service**: crypto-server, a Fastify service with API key or JWT auth, rate limiting, an audit log and optional OpenTelemetry. No throughput figures are published.
+- **Client SDKs**: crypto-sdk for TypeScript, and thin async-first SDKs for Java, Rust, Go, C++, .NET and Python, first released with suite version 0.0.40.
+- **KMS interface**: envelope encryption, signing and rotation with AWS KMS (including ML-DSA signing keys), Google Cloud KMS, HashiCorp Vault Transit and an in-memory provider. The Azure Key Vault provider is a stub; the PKCS#11 provider is a software simulation with no HSM.
+- **Field encryption**: Prisma and TypeORM adapters using XChaCha20-Poly1305.
+- **CBOM**: CycloneDX 1.6 or SPDX 3.0 cryptographic bills of materials from source code. A CBOM can be input to EU DORA ICT risk work; using the suite does not make a system DORA compliant.
+- **Tooling**: a CLI with scriptable subcommands, a language server, an MCP server over stdio, and test fixtures. crypto-wasm is a placeholder with no WebAssembly module.
+
+## Pages
+
+- [Home](https://crypto-service.co/): overview and quick start.
+- [Ecosystem](https://crypto-service.co/ecosystem/): the 18 npm packages.
+- [Language SDKs](https://crypto-service.co/sdks/): the six REST clients and their install commands.
+- [Solutions](https://crypto-service.co/solutions/): what each building block does, and its limits.
+- [Standards](https://crypto-service.co/standards/): FIPS 203/204/205, RFC 9180, CNSA 2.0 and CBOM coverage; nothing is validated or certified.
+- [Research](https://crypto-service.co/research/): threat models and migration planning.
+- [White papers](https://crypto-service.co/whitepapers/): longer papers.
+- [News](https://crypto-service.co/news/): release notes.
+- [API reference](https://docs.crypto-service.co/): TypeDoc for all 18 packages.
+- [Source](https://github.com/sebastienrousseau/crypto-service): code, mocha and c8 test suites, CI.
+
+## Project
+
+- **Licence**: Apache-2.0 OR MIT.
+- **Tests**: mocha with c8; every package enforces 100% statement, branch, function and line coverage. Coverage is not a correctness guarantee.
+- **Versioning**: all 18 packages move together, one 0.0.x step at a time.
+- **Security**: report vulnerabilities through GitHub private advisories, https://github.com/sebastienrousseau/crypto-service/security/advisories/new
+- **Maintainer**: Sebastien Rousseau (https://sebastienrousseau.com/).

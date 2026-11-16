@@ -1,14 +1,14 @@
 ---
 title: "Modular Crypto as a Service (CaaS) Solutions — Crypto Service Suite"
-description: "Self-hosted Crypto-as-a-Service (CaaS) building blocks for fintechs, banks, and enterprise engineering teams: post-quantum primitives, a REST service, a KMS interface, database field encryption, edge runtime support, and CycloneDX CBOM generation."
+description: "Self-hosted cryptography building blocks for banks, fintechs and engineering teams: post-quantum primitives, a REST service, a KMS interface, field encryption, edge support and CBOM generation."
 eyebrow: "Institutional Solutions & Architecture"
 headline: "Sovereign Cryptographic Infrastructure for Modern Enterprise Stacks"
-lead: "Crypto Service Suite provides self-hostable Cryptography-as-a-Service (CaaS) building blocks across 18 lockstep libraries: FIPS 203/204 algorithms (via @noble/post-quantum; not a validated cryptographic module), a KMS interface, and transparent database field encryption."
+lead: "Crypto Service Suite provides self-hostable cryptography building blocks in 18 npm packages that share one version: FIPS 203/204/205 algorithms (via @noble/post-quantum; not a validated cryptographic module), a REST service with six language SDKs, a KMS interface, and database field encryption."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -19,17 +19,17 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 <div class="solution-nav-card">
 <span class="solution-num font-mono">01</span>
 <h3><a href="#post-quantum">Post-Quantum Cryptography</a></h3>
-<p>NIST FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms, plus classical + ML-KEM hybrid KEMs.</p>
+<p>NIST FIPS 203 ML-KEM, FIPS 204 ML-DSA and FIPS 205 SLH-DSA algorithms, hybrid KEMs, Composite ML-DSA and X-Wing HPKE.</p>
 </div>
 <div class="solution-nav-card">
 <span class="solution-num font-mono">02</span>
 <h3><a href="#caas-server">Self-Hosted CaaS Service &amp; SDK</a></h3>
-<p>Self-hosted Fastify REST service, typed client SDK, and interactive CLI.</p>
+<p>Self-hosted Fastify REST service, a TypeScript SDK and six language SDKs, and a scriptable CLI.</p>
 </div>
 <div class="solution-nav-card">
 <span class="solution-num font-mono">03</span>
 <h3><a href="#multi-cloud-kms">KMS Interface</a></h3>
-<p>Uniform provider interface. AWS KMS and a local provider are implemented; GCP, Azure and Vault are stubs.</p>
+<p>One provider interface. AWS KMS, Google Cloud KMS, HashiCorp Vault Transit and a local provider are implemented; Azure is a stub and PKCS#11 a simulation.</p>
 </div>
 <div class="solution-nav-card">
 <span class="solution-num font-mono">04</span>
@@ -48,30 +48,26 @@ light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 </div>
 </div>
 
-<div class="card card-quickstart">
-<div class="quickstart-header">
-<span class="quickstart-title">Developer Quick-Start Installation</span>
-<span class="quickstart-lang">npm (0.0.8 or later)</span>
-</div>
-<div class="hero-code-block">
-<pre><code><span class="hero-code-comment"># 1. Install (0.0.8 or later)</span>
-<span class="hero-code-cmd">pnpm add</span> @sebastienrousseau/crypto-lib
+<figure class="code-window" id="quickstart">
+<figcaption class="code-titlebar"><span class="code-filename">quickstart.ts</span></figcaption>
+<pre class="code-body" tabindex="0"><code><span class="syn-comment"># 1. Install (Node.js 22 or later)</span>
+pnpm add @sebastienrousseau/crypto-lib
 
-<span class="hero-code-comment">// 2. ML-KEM-768 key encapsulation (FIPS 203 algorithm)</span>
-<span class="hero-code-keyword">import</span> { mlKemKeygen, mlKemEncap, mlKemDecap } <span class="hero-code-keyword">from</span> <span class="hero-code-string">"@sebastienrousseau/crypto-lib"</span>;
+<span class="syn-comment">// 2. ML-KEM-768 key encapsulation (FIPS 203 algorithm; not a validated module)</span>
+<span class="syn-keyword">import</span> { mlKemKeygen, mlKemEncapsulate, mlKemDecapsulate } <span class="syn-keyword">from</span> <span class="syn-string">"@sebastienrousseau/crypto-lib"</span>;
 
-<span class="hero-code-keyword">const</span> kem = mlKemKeygen(768);
-<span class="hero-code-keyword">const</span> { ciphertext, sharedSecret } = mlKemEncap(768, kem.publicKey);
-<span class="hero-code-keyword">const</span> received = mlKemDecap(768, kem.secretKey, ciphertext);</code></pre>
-</div>
-</div>
+<span class="syn-keyword">const</span> { publicKey, secretKey } = <span class="syn-function">mlKemKeygen</span>(768);
+<span class="syn-keyword">const</span> { ciphertext, sharedSecret } = <span class="syn-function">mlKemEncapsulate</span>(768, publicKey);
+<span class="syn-keyword">const</span> received = <span class="syn-function">mlKemDecapsulate</span>(768, secretKey, ciphertext);
+<span class="syn-comment">// received.sharedSecret === sharedSecret</span></code></pre>
+</figure>
 
 <hr class="section-divider">
 
 <section id="post-quantum" class="solution-detail-section">
 <div class="solution-header">
 <span class="solution-badge font-mono">SOLUTION 01 // CORE CRYPTOGRAPHY</span>
-<h2>1. Post-Quantum Enclaves &amp; Hybrid Key Encapsulation</h2>
+<h2>1. Post-Quantum Algorithms &amp; Hybrid Constructions</h2>
 </div>
 
 <p class="lead-text">
@@ -88,12 +84,12 @@ Under the <strong>Harvest Now, Decrypt Later (HNDL)</strong> attack model, state
 <p><code>@sebastienrousseau/crypto-lib</code> exposes ML-KEM-512, ML-KEM-768 and ML-KEM-1024 through <code>@noble/post-quantum</code>. ML-KEM-768 targets NIST security category 3 and has 1,088-byte ciphertexts.</p>
 </div>
 <div class="card">
-<h3>Composite Dual-Layer Hybrid Schemes</h3>
-<p>Combines a classical curve (X25519, NIST P-256 or X448) with ML-KEM and derives the session key from both shared secrets, so an attacker must break <em>both</em> components to recover it.</p>
+<h3>Hybrid KEMs, Composite ML-DSA &amp; X-Wing</h3>
+<p>Hybrid KEMs combine a classical curve (X25519, NIST P-256 or X448) with ML-KEM; every X25519 + ML-KEM-768 construction derives its key from one v2 combiner that binds both ciphertexts and both public keys (ADR 0004). Hybrid signatures follow Composite ML-DSA (draft-ietf-lamps-pq-composite-sigs, ADR 0003), and HPKE uses X-Wing as its post-quantum KEM (ADR 0002). These hybrids are not the RFC 10024 TLS groups.</p>
 </div>
 <div class="card" id="signatures">
 <h3>FIPS 204 (ML-DSA) Digital Signatures</h3>
-<p>Lattice-based digital signatures (ML-DSA-44/65/87) via <code>@noble/post-quantum</code>. ML-DSA-65 targets NIST security category 3. <code>@noble/post-quantum</code> does not guarantee constant-time execution.</p>
+<p>Lattice-based digital signatures (ML-DSA-44/65/87) via <code>@noble/post-quantum</code>, or Node.js's native implementation on 24.7 and later, plus SLH-DSA (FIPS 205). NIST ACVP known-answer tests run in CI. ML-DSA-65 targets NIST security category 3. <code>@noble/post-quantum</code> does not guarantee constant-time execution.</p>
 </div>
 <div class="card" id="entropy">
 <h3>Memory Hygiene &amp; Entropy</h3>
@@ -118,7 +114,7 @@ loading="lazy"
 <section id="caas-server" class="solution-detail-section">
 <div class="solution-header">
 <span class="solution-badge font-mono">SOLUTION 02 // MICROSERVICE ARCHITECTURE</span>
-<h2>2. Sovereign Crypto-as-a-Service Daemon &amp; Client SDK</h2>
+<h2>2. Self-Hosted REST Service &amp; Client SDKs</h2>
 </div>
 
 <p class="lead-text">
@@ -132,15 +128,15 @@ Your applications call the service over a REST API. Keys you manage with it stay
 <div class="grid-2x2">
 <div class="card">
 <h3>Fastify REST Microservice</h3>
-<p><code>@sebastienrousseau/crypto-server</code> exposes crypto-lib operations behind documented REST endpoints, with rate limiting and OpenTelemetry instrumentation. No throughput figures are published yet.</p>
+<p><code>@sebastienrousseau/crypto-server</code> exposes crypto-lib operations behind REST endpoints documented by an OpenAPI document, with API key or JWT auth, rate limiting, an audit log and OpenTelemetry instrumentation. No throughput figures are published.</p>
 </div>
 <div class="card">
-<h3>Type-Safe Zero-Dependency SDK</h3>
-<p><code>@sebastienrousseau/crypto-sdk</code> is a zero-dependency, fetch-based TypeScript client with typed request and response bindings.</p>
+<h3>Client SDKs</h3>
+<p><code>@sebastienrousseau/crypto-sdk</code> is a zero-dependency, fetch-based TypeScript client with typed requests and responses. Thin async-first <a href="/sdks/">language SDKs</a> for Java, Rust, Go, C++, .NET and Python call the same API.</p>
 </div>
 <div class="card">
-<h3>Interactive CLI</h3>
-<p>The <code>@sebastienrousseau/crypto-cli</code> package offers key pair generation, encryption, signing, hashing and CBOM generation from an interactive terminal menu. It has no non-interactive flags, so it is not suited to scripts or CI pipelines.</p>
+<h3>Command-Line Interface</h3>
+<p><code>@sebastienrousseau/crypto-cli</code> has non-interactive subcommands for scripts and CI pipelines (<code>hash</code>, <code>keygen</code>, <code>encrypt</code>, <code>decrypt</code>, <code>sign</code>, <code>verify</code>, <code>password</code>, <code>cbom</code>, <code>stream</code>, <code>opaque</code>, <code>hpke</code> and <code>kms</code>), and opens an interactive menu when run without arguments in a terminal.</p>
 </div>
 <div class="card">
 <h3>Self-Hosted Deployment</h3>
@@ -158,7 +154,7 @@ Your applications call the service over a REST API. Keys you manage with it stay
 </div>
 
 <p class="lead-text">
-<code>@sebastienrousseau/crypto-kms</code> defines one TypeScript interface for key management backends. Today the AWS KMS and local in-memory providers are implemented. The Google Cloud, Azure and HashiCorp Vault providers are stubs that reject every call with <code>Not implemented</code>.
+<code>@sebastienrousseau/crypto-kms</code> defines one TypeScript interface for key management backends. AWS KMS, Google Cloud KMS, HashiCorp Vault Transit and an in-memory local provider are implemented. The Azure Key Vault provider is a stub that rejects every call, and the PKCS#11 provider is a software simulation.
 </p>
 
 <p>
@@ -168,19 +164,19 @@ Your applications call the service over a REST API. Keys you manage with it stay
 <div class="grid-2x2">
 <div class="card">
 <h3>AWS KMS (implemented)</h3>
-<p><code>AwsKmsProvider</code> calls AWS Key Management Service through <code>@aws-sdk/client-kms</code>. There is no direct CloudHSM integration.</p>
+<p><code>AwsKmsProvider</code> calls AWS Key Management Service through the optional <code>@aws-sdk/client-kms</code> peer, including ML-DSA signing keys (<code>ML_DSA_SHAKE_256</code>). There is no direct CloudHSM integration.</p>
 </div>
 <div class="card">
-<h3>Google Cloud KMS (stub)</h3>
-<p><code>GcpKmsProvider</code> exists as an interface placeholder; every method rejects with <code>Not implemented</code>.</p>
+<h3>Google Cloud KMS &amp; Vault Transit (implemented)</h3>
+<p><code>GcpKmsProvider</code> calls the Cloud KMS REST API v1 and <code>VaultKmsProvider</code> the HashiCorp Vault Transit secrets engine, both with <code>fetch</code> and no vendor SDK. Cloud KMS has no remote asymmetric verify, so signatures are verified locally against each enabled key version's public key.</p>
 </div>
 <div class="card">
 <h3>Azure Key Vault (stub)</h3>
-<p><code>AzureKmsProvider</code> exists as an interface placeholder; every method rejects with <code>Not implemented</code>.</p>
+<p><code>AzureKmsProvider</code> is a placeholder: every method rejects with <code>NOT_IMPLEMENTED</code>, and no Azure SDK is used.</p>
 </div>
 <div class="card">
-<h3>HashiCorp Vault (stub) &amp; PKCS#11 (simulation)</h3>
-<p><code>VaultKmsProvider</code> is a stub. <code>Pkcs11HsmProvider</code> is an in-memory software simulation for tests: it has no PKCS#11 binding, talks to no HSM, and requires <code>simulate: true</code>.</p>
+<h3>PKCS#11 (simulation)</h3>
+<p><code>Pkcs11HsmProvider</code> is an in-memory software simulation for tests: it has no PKCS#11 binding, talks to no HSM, and requires <code>simulate: true</code>.</p>
 </div>
 </div>
 </section>
@@ -236,7 +232,7 @@ loading="lazy"
 
 <section id="edge-wasm" class="solution-detail-section">
 <div class="solution-header">
-<span class="solution-badge font-mono">SOLUTION 05 // HIGH PERFORMANCE</span>
+<span class="solution-badge font-mono">SOLUTION 05 // RUNTIMES</span>
 <h2>5. Edge Runtime Support</h2>
 </div>
 
@@ -273,7 +269,7 @@ A cryptographic inventory is a common input to DORA (EU 2022/2554) ICT risk work
 </p>
 
 <p>
-Developer IDEs and autonomous AI agents receive native cryptographic intelligence through the Language Server Protocol (LSP) and Model Context Protocol (MCP), flagging weak or quantum-vulnerable algorithm names and offering quick fixes.
+A language server flags weak or quantum-vulnerable cryptography in editors and offers quick fixes, and an MCP server gives AI agents cryptography tools that run on your machine.
 </p>
 
 <div class="grid-2x2">
@@ -287,7 +283,7 @@ Developer IDEs and autonomous AI agents receive native cryptographic intelligenc
 </div>
 <div class="card">
 <h3>Model Context Protocol (MCP) for AI</h3>
-<p><code>@sebastienrousseau/crypto-mcp</code> exposes crypto-lib operations, key generation and KMS tools to AI assistants through the Model Context Protocol.</p>
+<p><code>@sebastienrousseau/crypto-mcp</code> exposes 23 cryptography tools (key generation, encryption, ML-KEM, ML-DSA, hashing, streaming, KMS and CBOM) to AI assistants through the Model Context Protocol over stdio, with no network port.</p>
 </div>
 <div class="card">
 <h3>Test Fixtures</h3>
@@ -296,7 +292,7 @@ Developer IDEs and autonomous AI agents receive native cryptographic intelligenc
 </div>
 
 <div class="hero-cta-group hero-cta-spaced">
-<a class="btn btn-swift-mint btn-lg" href="/contact/">Request Architecture Briefing →</a>
+<a class="btn btn-swift-mint btn-lg" href="/contact/">Contact the project →</a>
 <a class="btn btn-secondary btn-lg" href="/standards/">View Standards Matrix →</a>
 </div>
 </section>

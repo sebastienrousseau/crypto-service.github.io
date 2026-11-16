@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Local toolchain. CI pins the same ssg version (SSG_VERSION in
+# .github/workflows/*.yml); move both together.
+[tools]
+"cargo:ssg" = "0.0.76"

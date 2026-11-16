@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 nav_overview: "Architecture"
@@ -90,7 +90,7 @@ While Fireblocks provides an extensive multi-tenant MPC network, standard commer
 <ul class="comparison-detail-list">
 <li><strong>In-Process Signing:</strong> Avoid multi-round MPC network latency; execute key derivation and signatures directly in-process.</li>
 <li><strong>Post-Quantum Transition:</strong> Instant drop-in support for NIST FIPS 203 ML-KEM and FIPS 204 ML-DSA alongside classical elliptic curves.</li>
-<li><strong>Coverage Gates:</strong> All 18 packages enforce 100% line and function coverage in CI, and all but crypto-lib (99.5%) enforce 100% branch coverage.</li>
+<li><strong>Coverage Gates:</strong> All 18 packages enforce 100% statement, branch, function and line coverage in CI.</li>
 </ul>
 </div>
 </div>
@@ -99,7 +99,7 @@ While Fireblocks provides an extensive multi-tenant MPC network, standard commer
 
 <h3>Hybrid Architectural Synergy: Sovereign Enclave + MPC Rails</h3>
 <p>
-Leading enterprise institutions deploy Crypto Service Suite as an <strong>on-premise quantum-hardened policy enclave</strong> directly upstream of Fireblocks. Crypto Service verifies internal risk boundaries, sanitizes payloads, and stamps immutable ML-DSA audit signatures before dispatching transactions across Fireblocks' multi-chain MPC rails.
+One possible architecture runs Crypto Service on premises <strong>upstream of Fireblocks</strong>: the institution's own service checks internal policy and adds an ML-DSA signature to each transaction record for its audit trail before the transaction goes to Fireblocks' MPC platform. Crypto Service supplies the signing primitives; the policy logic and the integration are the institution's to build.
 </p>
 </div>
 </section>

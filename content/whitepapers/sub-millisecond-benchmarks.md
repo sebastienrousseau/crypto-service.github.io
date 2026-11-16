@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -125,14 +125,14 @@ The repository contains two benchmark entry points. The script <code>benchmarks/
 cd crypto-service
 pnpm install
 pnpm -r run build
-node benchmarks/crypto-bench.ts --iterations 500</code></pre>
+node --require ts-node/register/transpile-only benchmarks/crypto-bench.ts --iterations 500</code></pre>
 <p>
 Record the Node.js version, operating system, CPU and iteration count with any result, run on an otherwise idle machine, and repeat several times. Results depend on hardware and load and are not service level guarantees.
 </p>
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>Post-Quantum Benchmarks: Method, Sizes and Status</em>. Crypto Service Performance Series. Reference: CSS-PERF-2026-006. Canonical URI: https://docs.crypto-service.co/whitepapers/sub-millisecond-benchmarks/
+Rousseau, S. (2026). <em>Post-Quantum Benchmarks: Method, Sizes and Status</em>. Crypto Service Performance Series. Reference: CSS-PERF-2026-006. Canonical URI: <a href="https://crypto-service.co/whitepapers/sub-millisecond-benchmarks/">https://crypto-service.co/whitepapers/sub-millisecond-benchmarks/</a>
 </div>
 
 <div class="book-actions">

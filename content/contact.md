@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -23,10 +23,10 @@ The project is maintained in the open on GitHub. There is no paid support plan, 
 </p>
 
 <div class="contact-card">
-<span class="solution-badge font-mono">QUESTIONS</span>
-<h3>GitHub Discussions</h3>
-<p>Usage questions, design discussion and ideas.</p>
-<p><a href="https://github.com/sebastienrousseau/crypto-service/discussions" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Open a discussion →</a></p>
+<span class="solution-badge font-mono">IDEAS</span>
+<h3>Feature Requests</h3>
+<p>Usage questions, design proposals and ideas, as a GitHub issue.</p>
+<p><a href="https://github.com/sebastienrousseau/crypto-service/issues/new?template=feature-request.md" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Request a feature →</a></p>
 </div>
 
 <div class="contact-card">
@@ -40,7 +40,7 @@ The project is maintained in the open on GitHub. There is no paid support plan, 
 <span class="solution-badge font-mono">SECURITY</span>
 <h3>Vulnerability Reports</h3>
 <p>Report security issues privately, never in a public issue. See the <a href="https://github.com/sebastienrousseau/crypto-service/blob/main/SECURITY.md" target="_blank" rel="noopener">security policy</a> for scope and process.</p>
-<p><strong>Email:</strong> <a href="mailto:security@crypto-service.co">security@crypto-service.co</a> or a <a href="https://github.com/sebastienrousseau/crypto-service/security/advisories/new" target="_blank" rel="noopener">GitHub private advisory</a>.</p>
+<p>Use a <a href="https://github.com/sebastienrousseau/crypto-service/security/advisories/new" target="_blank" rel="noopener">GitHub private security advisory</a>. The same address is in this site's <a href="/.well-known/security.txt">security.txt</a>.</p>
 </div>
 </div>
 

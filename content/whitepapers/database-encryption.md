@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -132,7 +132,7 @@ beneficiaryRoutingNumber: string;
 The adapters take a raw key from the application. They have no KMS integration, no key versioning in the stored value, and no rotation tooling.
 </p>
 <p>
-To rotate a key today, read each row with the old key and write it back with the new one in an application-level migration. If you need envelope encryption, generate and unwrap data keys with <code>@sebastienrousseau/crypto-kms</code> (AWS KMS is implemented) and pass the unwrapped key to the adapter.
+To rotate a key today, read each row with the old key and write it back with the new one in an application-level migration. If you need envelope encryption, generate and unwrap data keys with <code>@sebastienrousseau/crypto-kms</code> (AWS KMS, Google Cloud KMS and Vault Transit are implemented) and pass the unwrapped key to the adapter.
 </p>
 </section>
 
@@ -161,7 +161,7 @@ When the Prisma adapter cannot decrypt a stored value (for example, a legacy pla
 
 <div class="whitepaper-citation">
 <strong>Preferred Citation:</strong><br>
-Rousseau, S. (2026). <em>Transparent Column-Level Database Encryption with Prisma &amp; TypeORM</em>. Crypto Service Database Architecture Series. Reference: CSS-DATA-2026-007. Canonical URI: https://docs.crypto-service.co/whitepapers/database-encryption/
+Rousseau, S. (2026). <em>Transparent Column-Level Database Encryption with Prisma &amp; TypeORM</em>. Crypto Service Database Architecture Series. Reference: CSS-DATA-2026-007. Canonical URI: <a href="https://crypto-service.co/whitepapers/database-encryption/">https://crypto-service.co/whitepapers/database-encryption/</a>
 </div>
 
 <div class="book-actions">

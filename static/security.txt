@@ -1,0 +1,7 @@
+# Security contact for crypto-service.co and the Crypto Service packages
+# (RFC 9116). Served at /.well-known/security.txt and /security.txt.
+Contact: https://github.com/sebastienrousseau/crypto-service/security/advisories/new
+Expires: 2027-09-01T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://crypto-service.co/.well-known/security.txt
+Policy: https://github.com/sebastienrousseau/crypto-service/security/policy

@@ -8,7 +8,7 @@ layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 ---
@@ -30,7 +30,7 @@ Crypto Service Suite is open-source software you can run on your own infrastruct
 <section class="about-architecture-section" id="zero-dependency">
 <h2>The Four-Layer Monorepo Architecture</h2>
 <p>
-The suite is divided into 18 specialized, decoupled packages maintained in a strict monorepo moving in lockstep semantic versioning:
+The suite is 18 npm packages in one monorepo, all released at the same version (currently {{version}}). The six language SDKs are separate repositories that follow the same version:
 </p>
 
 <div class="grid-2x2">
@@ -45,14 +45,14 @@ The suite is divided into 18 specialized, decoupled packages maintained in a str
 <span class="solution-badge font-mono">LAYER 2 // INFRASTRUCTURE &amp; ORM</span>
 <h3>KMS, Edge &amp; Database Field Encryption</h3>
 <p>
-<code>@sebastienrousseau/crypto-kms</code>, <code>crypto-edge</code>, <code>crypto-prisma</code>, and <code>crypto-typeorm</code> provide a unified KMS interface (AWS and local providers implemented; GCP, Azure and Vault are stubs), edge runtime support (Cloudflare Workers, Vercel Edge, Deno, Bun, browsers), and transparent database column encryption.
+<code>@sebastienrousseau/crypto-kms</code>, <code>crypto-edge</code>, <code>crypto-prisma</code>, and <code>crypto-typeorm</code> provide a unified KMS interface (AWS KMS, Google Cloud KMS, HashiCorp Vault Transit and local providers implemented; Azure is a stub and PKCS#11 a software simulation), edge runtime support (Cloudflare Workers, Vercel Edge, Deno, Bun, browsers), and transparent database column encryption.
 </p>
 </div>
 <div class="card" id="versioning">
 <span class="solution-badge font-mono">LAYER 3 // PROTOCOLS &amp; CLIENTS</span>
 <h3>Servers, APIs, SDK &amp; UI Integrations</h3>
 <p>
-<code>@sebastienrousseau/crypto-server</code>, <code>crypto-api</code>, <code>crypto-cli</code>, <code>crypto-sdk</code>, <code>crypto-react</code>, and <code>crypto-vue</code> expose a Fastify REST service, a zero-dependency fetch-based SDK client, an interactive CLI, and reactive frontend hooks.
+<code>@sebastienrousseau/crypto-server</code>, <code>crypto-api</code>, <code>crypto-cli</code>, <code>crypto-sdk</code>, <code>crypto-react</code>, and <code>crypto-vue</code> expose a Fastify REST service, a zero-dependency fetch-based TypeScript SDK, a CLI with scriptable subcommands and an interactive menu, Postman collection tooling, and reactive frontend hooks. Separately from these 18 npm packages, six thin <a href="/sdks/">language SDKs</a> call the same REST API from Java, Rust, Go, C++, .NET and Python.
 </p>
 </div>
 <div class="card">
@@ -73,7 +73,7 @@ The suite is divided into 18 specialized, decoupled packages maintained in a str
 <div class="callout-box">
 <h3>Quality Gates and Known Limits</h3>
 <ul>
-<li id="invariants"><strong>Coverage gates:</strong> CI enforces 100% line and function coverage in every package (mocha and c8), and 100% branch coverage in every package except crypto-lib (99.5%).</li>
+<li id="invariants"><strong>Coverage gates:</strong> CI enforces 100% statement, branch, function and line coverage in all 18 packages (mocha and c8). Coverage shows what the tests run, not that the code is correct.</li>
 <li id="verification"><strong>Memory zeroization is limited:</strong> crypto-lib exports <code>wipeMemory()</code> and <code>SecureBuffer</code>, but its own APIs do not call them, and keys passed as hex strings cannot be wiped.</li>
 <li id="disclosure"><strong>No constant-time guarantee:</strong> The implementations have not been formally verified against timing side channels. <code>@noble/post-quantum</code> does not guarantee constant-time execution.</li>
 <li id="licensing"><strong>Licensing and supply chain:</strong> Dual-licensed under Apache 2.0 and MIT. CI generates a software bill of materials (SBOM) and runs <code>pnpm audit</code> and CodeQL.</li>
@@ -90,7 +90,7 @@ The suite is divided into 18 specialized, decoupled packages maintained in a str
 Learn how fintechs, banks, and enterprise engineering teams leverage Crypto Service Suite for sovereign cryptographic operations.
 </p>
 <div class="hero-cta-group">
-<a class="btn btn-swift-mint btn-lg" href="/contact/">Request Architecture Briefing →</a>
+<a class="btn btn-swift-mint btn-lg" href="/contact/">Contact the project →</a>
 <a class="btn btn-secondary btn-lg" href="https://github.com/sebastienrousseau/crypto-service" target="_blank" rel="noopener">GitHub Specifications →</a>
 </div>
 </section>

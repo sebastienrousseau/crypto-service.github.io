@@ -1,19 +1,31 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Static Site Generator (ssg) configuration for crypto-service.co.
+# Build with ./build.sh (or `make build`). It stages content/ into
+# .build/content with the suite version from VERSION filled in, runs ssg
+# on that staging copy, and publishes the result to site/. Running
+# `ssg build` directly without the staging step finds no content.
+
 site_name = "crypto-service"
-site_title = "Crypto Service Suite — Post-Quantum Cryptographic Infrastructure for Institutional Finance"
-site_description = "Open-source, self-hosted post-quantum cryptography toolkit for banks, custodians and fintechs: FIPS 203 ML-KEM and FIPS 204 ML-DSA algorithms (not a validated module), a KMS provider interface, database field encryption and CycloneDX CBOM generation across 18 lockstep packages."
+site_title = "Crypto Service Suite: Post-Quantum Cryptography Toolkit"
+site_description = "Open-source, self-hosted post-quantum cryptography toolkit: 18 TypeScript npm packages in lockstep with FIPS 203 ML-KEM, FIPS 204 ML-DSA and FIPS 205 SLH-DSA algorithms (not a validated module), a REST service, a KMS provider interface, database field encryption and CycloneDX CBOM generation, plus six thin language SDKs."
 base_url = "https://crypto-service.co"
 language = "en-GB"
 
-content_dir = "content"
+content_dir = ".build/content"
 template_dir = "_layouts"
-output_dir = "public"
+output_dir = ".build/public"
 
+# agents.txt only. ai-plugin.json is off: ssg points it at /openapi.yaml,
+# which this site does not publish, and /.well-known/mcp.json would
+# advertise an HTTP MCP endpoint that does not exist (crypto-mcp speaks
+# MCP over stdio on the user's own machine).
 [agents]
 agents_txt = true
-ai_plugin = true
+ai_plugin = false
 
-[agents.mcp]
-enabled = true
-
-[edge_headers]
-targets = ["cloudflare", "netlify"]
+# The markdownlint gate reads the pages as Markdown, but their bodies are
+# raw HTML, so it reports every absolute href="https://..." attribute as
+# a bare URL (MD034). Links are checked on the built HTML instead, by
+# the links gate and scripts/check_links.py.
+[audit.disabled]
+gates = ["markdownlint"]

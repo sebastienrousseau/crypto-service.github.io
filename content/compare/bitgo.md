@@ -3,12 +3,12 @@ title: "Crypto Service vs BitGo: Non-Custodial Architecture vs Hosted Intermedia
 description: "Detailed institutional architecture comparison between Crypto Service Suite and BitGo across non-custodial execution, post-quantum readiness, and fee structures."
 eyebrow: "Institutional Custody Comparison"
 headline: "Non-Custodial Cryptographic Infrastructure vs. Custodial Intermediaries"
-lead: "Compare sovereign on-premise zero-trust cryptography with BitGo's hosted custody platform. Eliminate basis point asset fees, cloud dependency, and counterparty insolvency risk."
+lead: "Compare sovereign on-premise zero-trust cryptography with BitGo's hosted custody platform. Where each fits, and what self-hosting shifts onto the institution."
 layout: page
 author: "Sebastien Rousseau"
 name: "Crypto Service"
 language: en-GB
-date: "2026-09-28"
+date: "2026-11-15"
 logo_alt: "Crypto Service Suite logo"
 light_trace_alt: "Pastel morphing gradient with organic glass droplets"
 nav_overview: "Architecture"
@@ -23,7 +23,7 @@ cta_primary: "Explore 18 Packages"
 
 <div class="card institutional-highlight-card">
 <p class="institutional-highlight-text">
-<strong>Institutional Summary:</strong> <strong>BitGo</strong> is a regulated qualified custodian providing trust custody, staking, and API-based settlement, while <strong>Crypto Service Suite</strong> is an on-premise, non-custodial cryptographic operating system that institutions deploy inside their private clouds to eliminate basis-point AUC fees, execute post-quantum key derivation, and govern internal policy before federating to cold custody.
+<strong>Institutional Summary:</strong> <strong>BitGo</strong> is a regulated qualified custodian providing trust custody, staking, and API-based settlement, while <strong>Crypto Service Suite</strong> is an on-premise, non-custodial cryptographic operating system that an institution can run in its own cloud for post-quantum encryption and signing ahead of, or alongside, a custodian.
 </p>
 </div>
 
@@ -63,12 +63,12 @@ Fintechs and financial institutions expanding digital asset and cryptographic in
 </tr>
 <tr>
 <td><strong>Deployment Flexibility</strong></td>
-<td class="col-highlight"><span class="comp-badge-ok">UNIVERSAL RUNTIME</span><br>Node.js, edge isolates and browsers; AWS KMS adapter</td>
+<td class="col-highlight"><span class="comp-badge-ok">UNIVERSAL RUNTIME</span><br>Node.js, edge isolates and browsers; AWS, Google Cloud and Vault KMS providers</td>
 <td><span class="comp-badge-warn">HOSTED API</span><br>Proprietary BitGo cloud API gateway</td>
 </tr>
 <tr>
 <td><strong>Verification Floor</strong></td>
-<td class="col-highlight"><span class="comp-badge-ok">CI COVERAGE GATES</span><br>100% line and function coverage in all 18 packages; no CAVP validation</td>
+<td class="col-highlight"><span class="comp-badge-ok">CI COVERAGE GATES</span><br>100% statement, branch, function and line coverage in all 18 packages; no CAVP validation</td>
 <td><span class="comp-badge-warn">PROPRIETARY</span><br>Closed-source proprietary implementation</td>
 </tr>
 </tbody>
@@ -83,8 +83,8 @@ Fintechs and financial institutions expanding digital asset and cryptographic in
 <span class="solution-badge font-mono">FOR CFOs &amp; GENERAL COUNSEL</span>
 <h3>Asset Sovereignty &amp; P&amp;L Protection</h3>
 <ul class="comparison-detail-list">
-<li><strong>Eliminating AUC Rents:</strong> On a $2B portfolio, a 15 bps custodial fee costs $3,000,000 annually. Crypto Service operates as pure infrastructure with zero asset taxation.</li>
-<li><strong>Bankruptcy Remoteness:</strong> Cryptographic root keys remain in infrastructure the institution controls, preventing asset freezing during custodian Chapter 11 reorganizations.</li>
+<li><strong>Cost Model:</strong> Hosted custody is commonly priced in basis points of assets under custody. Crypto Service is open-source software with no such fee; the institution bears its own infrastructure and operating costs.</li>
+<li><strong>Key Control:</strong> Keys remain on infrastructure the institution controls rather than with a third-party custodian. Crypto Service is not a custodian and offers no legal custody arrangement.</li>
 <li><strong>Cryptographic Inventory:</strong> Generates CBOM reports listing the algorithms in use. They are inventory evidence, not proof of FIPS or ISO compliance.</li>
 </ul>
 </div>
@@ -93,8 +93,8 @@ Fintechs and financial institutions expanding digital asset and cryptographic in
 <span class="solution-badge font-mono">FOR PRINCIPAL CRYPTO ARCHITECTS</span>
 <h3>Zero-Latency Core &amp; Enclave Control</h3>
 <ul class="comparison-detail-list">
-<li><strong>In-Process Execution:</strong> Eliminates external REST API latency, network jitter, and vendor rate-limiting for high-frequency operations.</li>
-<li><strong>KMS Interface:</strong> One provider interface for key backends. AWS KMS is implemented; GCP KMS, Azure Key Vault and HashiCorp Vault providers are stubs.</li>
+<li><strong>In-Process Execution:</strong> crypto-lib runs in your own process, so there is no call to an external vendor API; no latency figures are published.</li>
+<li><strong>KMS Interface:</strong> One provider interface for key backends. AWS KMS, Google Cloud KMS and HashiCorp Vault Transit are implemented; the Azure Key Vault provider is a stub and the PKCS#11 provider a software simulation.</li>
 <li><strong>Post-Quantum Envelope Encryption:</strong> Native Prisma and TypeORM extensions encrypt database fields before records leave the application tier.</li>
 </ul>
 </div>
