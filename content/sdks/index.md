@@ -19,7 +19,7 @@ date: "2026-11-15"
 <table>
 <thead><tr><th scope="col">Language</th><th scope="col">Package</th><th scope="col">Published on</th></tr></thead>
 <tbody>
-<tr><th scope="row"><a href="/sdks/java/">Java</a></th><td><code>co.cryptoservice:crypto-service-sdk</code></td><td>Maven Central</td></tr>
+<tr><th scope="row"><a href="/sdks/java/">Java</a></th><td><code>co.crypto-service:crypto-service-sdk</code></td><td>Maven Central</td></tr>
 <tr><th scope="row"><a href="/sdks/rust/">Rust</a></th><td><code>crypto-service-sdk</code></td><td>crates.io</td></tr>
 <tr><th scope="row"><a href="/sdks/go/">Go</a></th><td><code>github.com/sebastienrousseau/crypto-service-sdk-go</code></td><td>Go module proxy</td></tr>
 <tr><th scope="row"><a href="/sdks/cpp/">C++</a></th><td><code>crypto_service_sdk</code></td><td>GitHub release (CMake package)</td></tr>
