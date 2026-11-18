@@ -77,7 +77,7 @@ jobs:
         env:
           REVIEW_PATCH: ${{ runner.temp }}/crypto-service-site-update.patch
         run: |
-          git add -A -- . ':!site'
+          git add -A # site/ is gitignored, so it stays out
           git diff --cached --binary > "$REVIEW_PATCH"
           (cd "$RUNNER_TEMP" && sha256sum crypto-service-site-update.patch > crypto-service-site-update.patch.sha256)
           echo "Apply the ${REQUESTED} patch on feat/v${REQUESTED} and add its news entry." >> "$GITHUB_STEP_SUMMARY"
